@@ -1,0 +1,138 @@
+.box-auth-pass {
+    position: relative;
+}
+
+.form-select {
+    padding: 12px;
+    background-color: $surface;
+    border: 1px solid $white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    color: $secondary;
+    &:focus {
+        border-color: $white;
+        box-shadow: unset;
+    }
+}
+
+.show-pass,
+.show-pass2 {
+    position: absolute;
+    right: 16px;
+    top: 15px;
+    cursor: pointer;
+    .icon-eye-show {
+        display: none;
+    }
+    &.active {
+        .icon-eye-show {
+            display: inline-block;
+            margin-top: 3px;
+        }
+        .icon-eye-hide {
+            display: none;
+        }
+    }
+}
+
+.group-cb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &.cb-signup {
+        label {
+            span {
+                color: $onSurface;
+                font-weight: 500;
+            }
+        }
+        .tf-checkbox {
+            border-color: $line;
+            &:checked {
+                border-color: $primary;
+                &::before {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.digit-group {
+    display: flex;
+    gap: 10px;
+    input {
+        width: 20%;
+        border-radius: 0;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28px;
+        border-bottom: 1px solid $line;
+        padding: 12px 0px;
+        text-align: center;
+        background: $white;
+        &:valid {
+            border-bottom-color: $onSurface;
+        }
+        &:focus {
+            border-color: transparent;
+            border-bottom-color: $onSurface;
+        }
+    }
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    .icon-search {
+        position: absolute;
+        font-size: 24px;
+        color: $primary;
+        top: 11px;
+        right: 12px;
+    }
+    .search-field {
+        padding: 12px;
+        padding-right: 45px;
+    }
+    &.st2 {
+        .search-field {
+            padding: 12px;
+            padding-left: 33px;
+        }
+        .icon-search-2 {
+            position: absolute;
+            font-size: 18px;
+            color: $onSurface;
+            top: 12px;
+            left: 12px;
+        }
+    }
+}
+.box-review {
+    position: relative;
+    .meta-review {
+        position: absolute;
+        bottom: 20px;
+        left: 13px;
+        right: 13px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+.lo-select,.time-select {
+    &.active {
+        .current {
+            background-color: $primary;
+            color: $white;
+            border-color: $primary;
+        }
+        &::after {
+            border-color: $white;
+        }
+    }
+}
