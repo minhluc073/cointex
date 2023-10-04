@@ -1,3 +1,23 @@
-.hhh {
-    color: $critical;
+.tf-checkbox {
+    position: relative;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    border-radius: 2px;
+    cursor: pointer;
+    outline: 0;
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+    @include flex(center, center);
+    &::before {
+        content: "\e923";
+        position: absolute;
+        font-family: $fontIcon;
+        font-size: 8px;
+        margin-top: -1px;
+        color: var(--surface);
+    }
+    &:checked {
+        background-color: var(--surface);
+    }
 }

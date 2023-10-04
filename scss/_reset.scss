@@ -235,19 +235,17 @@ body {
     font-family: $font-main-family;
     font-size: $font-main-size;
     line-height: $font-main-line;
-    font-weight: 300;
-    background-color: $white;
-    color: $secondary;
+    font-weight: 400;
+    background-color: var(--surface);
+    color: var(--secondary);
     min-height: 100vh;
     width: 100%;
-    // margin: 0 auto;
-    // overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     outline: none;
-    color: $onSurface;
+    color: var(--white);
     cursor: pointer;
     @include transition3;
     &:hover,
@@ -255,7 +253,7 @@ a {
     &.active {
         text-decoration: none;
         outline: none;
-        color: $onSurface;
+        // color: $onSurface;
     }
 }
 
@@ -303,13 +301,11 @@ h3,
 h4,
 h5,
 h6 {
-    color: $onSurface;
-    font-weight: 500;
+    color: var(--white);
+    font-weight: 600;
     a {
-        // color: $primary;
-        &:hover {
-            // color: $primary;
-        }
+        color: var(--white);
+        
     }
 }
 h5 {
@@ -325,21 +321,21 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     width: 100%;
-    padding: 12px 0px;
+    padding: 12px 40px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 21px;
-    background-color: $primary;
-    border: 1px solid $primary;
-    color: $white;
-    text-transform: capitalize;
-    border-radius: 100px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: var(--white);
+    border-radius: 8px;
     @include flex(center, center);
     @include transition3;
 
     &:hover {
-        color: $primary;
-        background-color: $white;
+        color: var(--primary);
+        background-color: var(--white);
+        border-color: var(--white);
     }
 }
 
@@ -361,15 +357,14 @@ input[type="tel"],
 input[type="color"] {
     font-family: $font-main-family;
     width: 100%;
-    font-size: 14px;
     border: 1px solid transparent;
-    background-color: $surface;
-    color: $onSurface;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    padding: 13px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 12px 16px;
     border-radius: 8px;
+    color: var(--white);
+    background-color: var(--menuDark);
 }
 input[type="password"] {
     // font-size: 18px;
@@ -393,15 +388,15 @@ input[type="color"]:focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-color: $primary;
+    border-color: var(--white);
 }
 
 textarea::placeholder,
 input::placeholder {
-    color: $secondary;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
+    color: var(--secondary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 textarea,
@@ -432,18 +427,18 @@ textarea {
     padding: 13px 12px;
 }
 label {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 16px;
-    color: $secondary;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--secondary);
 }
 
 .tf-container {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
 }
 .mw-wrapper {
@@ -452,13 +447,25 @@ label {
     margin-right: auto;
 }
 
-.text-large {
-    font-size: 17px;
-    line-height: 24px;
+.bg-surface {
+    background-color: var(--surface);
 }
-.text-medium {
+.text-primary {
+    color: var(--primary) !important;
+}
+.text-secondary {
+    color: var(--secondary) !important;
+}
+.text-white {
+    color: var(--white) !important;
+}
+.text-large {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 26px;
+}
+.text-button {
+    font-size: 16px;
+    line-height: 21px;
 }
 .text-small {
     font-size: 14px;
@@ -472,7 +479,7 @@ label {
     font-weight: 300;
 }
 .fw-4 {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 .fw-5 {
     font-weight: 500;
@@ -520,6 +527,9 @@ label {
 }
 .mt-30 {
     margin-top: 30px;
+}
+.mt-32 {
+    margin-top: 32px;
 }
 .mt-40 {
     margin-top: 40px;
@@ -617,71 +627,16 @@ label {
 .pt-65 {
     padding-top: 65px;
 }
-.bg-white {
-    background-color: $white !important;
-}
-.bg-surface {
-    background-color: $surface;
-}
-.bg-secondary {
-    background-color: $line !important;
-}
-// color text
-.text-primary {
-    color: $primary !important;
-}
-.text-onSurface {
-    color: $onSurface !important;
-}
-.text-critical {
-    color: $critical !important;
-}
-.bg-critical {
-    background-color: $critical;
-}
-.text-secondary {
-    color: $secondary !important;
-}
-.text-warning {
-    color: $warning !important;
-}
-.text-success {
-    color: $success !important;
-}
-.tf-checkbox {
-    position: relative;
-    border: 1px solid $secondary;
-    border-radius: 5px;
-    background: none;
-    cursor: pointer;
-    outline: 0;
-    width: 16px;
-    height: 16px;
-    -webkit-appearance: none;
-    @include flex(center, center);
-    &::before {
-        content: "\e923";
-        position: absolute;
-        font-family: $fontIcon;
-        font-size: 8px;
-        margin-top: -1px;
-        color: $white;
-    }
-    &:checked {
-        border-color: $primary;
-        &::before {
-            color: $primary;
-        }
-    }
-}
+
+
 .line-bt {
-    border-bottom: 1px solid $line;
+    border-bottom: 1px solid var(--line);
 }
 .line4-bt {
-    border-bottom: 4px solid $surface;
+    border-bottom: 4px solid var(--surface);
 }
 .line-r {
-    border-right: 1px solid $line;
+    border-right: 1px solid var(--line);
 }
 .line-4 {
     height: 4px;

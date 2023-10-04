@@ -111,6 +111,7 @@
 .icon-left-btn:before {
   content: "\e917";
   color: #fff;
+  font-size: 16px;
 }
 .icon-check:before {
   content: "\e923";
