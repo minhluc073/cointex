@@ -43,4 +43,22 @@
         line-height: 26px;
         border-radius: 12px;
     }
+    &.line {
+        border: 1px solid var(--line);
+        &.active,
+        &:hover {
+            color: var(--white) !important;
+            border-color: var(--primary);
+        }
+    }
+}
+.tag-xs {
+    padding: 4px 8px;
+    display: inline-block;
+    &.primary {
+        background-color: var(--primary);
+    }
+    &.round-1 {
+        border-radius: 14.178px;
+    }
 }

@@ -7,7 +7,6 @@
         height: 45px;
         display: flex;
         align-items: center;
-        
     }
     .right {
         right: 16px;
@@ -15,6 +14,22 @@
         min-width: 40px;
         height: 45px;
         @include flex(center, flex-end);
+    }
+    .box-icon {
+        width: 28px;
+        height: 28px;
+        @include flex(center, center);
+        border-radius: 100px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    &.absolute {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        background: transparent;
+        border: 0;
+        left: 0;
+        z-index: 999;
     }
 }
 

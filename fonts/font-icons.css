@@ -63,7 +63,7 @@
 }
 .icon-funnel:before {
   content: "\e90c";
-  color: #fff;
+  font-size: 20px;
 }
 .icon-bluetooth:before {
   content: "\e90d";
@@ -107,6 +107,7 @@
 }
 .icon-cancel:before {
   content: "\e92a";
+  font-size: 16px;
 }
 .icon-left-btn:before {
   content: "\e917";
@@ -199,6 +200,7 @@
 .icon-share:before {
   content: "\e92d";
   color: #fff;
+  font-size: 20px;
 }
 .icon-shapes:before {
   content: "\e92e";

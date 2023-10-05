@@ -253,7 +253,7 @@ a {
     &.active {
         text-decoration: none;
         outline: none;
-        // color: $onSurface;
+        color: var(--white);
     }
 }
 
@@ -631,7 +631,9 @@ label {
     padding-top: 65px;
 }
 
-
+.line-t {
+    border-top: 1px solid var(--line);
+}
 .line-bt {
     border-bottom: 1px solid var(--line);
 }
@@ -652,7 +654,6 @@ label {
 .grid-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1px;
 }
 .grid-4 {
     display: grid;
@@ -661,6 +662,7 @@ label {
 .grid-5 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    justify-content:  space-between;
 }
 .gap-4 {
     gap: 4px !important;
@@ -674,11 +676,18 @@ label {
 .gap-10 {
     gap: 10px;
 }
+.gap-16 {
+    gap: 16px;
+}
 .gap-12 {
     gap: 12px;
 }
 .gap-20 {
     gap: 20px;
+}
+.rcg-12-16 {
+    row-gap: 12px;
+    column-gap: 16px;
 }
 .lr-radius {
     border-radius: 12px 12px 0px 0px;
