@@ -5,6 +5,7 @@
   --secondary: #7e8088;
   --surface: #11150f;
   --red: #d33535;
+  --critical: #f53966;
   --remake: #f5c738;
   --line: #393737;
   --menuDark: #222223;
@@ -586,6 +587,10 @@ label {
 
 .mt-60 {
   margin-top: 60px;
+}
+
+.mt-80 {
+  margin-top: 80px;
 }
 
 .mb-12 {
@@ -1294,6 +1299,71 @@ label {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.banner-received {
+  position: relative;
+  text-align: center;
+}
+.banner-received img {
+  width: 271px;
+}
+.banner-received svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -34%;
+  z-index: -1;
+}
+
+.banner-reset img {
+  width: 200px;
+  margin-left: 2rem;
+}
+.banner-reset .blur {
+  position: absolute;
+  left: 42%;
+  transform: translateX(-50%);
+  z-index: -1;
+  top: -34%;
+}
+.banner-reset .tag-stock {
+  position: relative;
+  top: -2rem;
+  left: -2.7rem;
+  background-color: var(--white);
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+.banner-reset .tag-stock::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--critical);
+  border-radius: 50px;
+  position: absolute;
+  bottom: -3px;
+  left: 14px;
+}
+
+.banner-newpass {
+  position: relative;
+  text-align: center;
+}
+.banner-newpass img {
+  width: 300px;
+}
+.banner-newpass svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -44%;
+  z-index: -1;
 }
 
 .tf-checkbox {
