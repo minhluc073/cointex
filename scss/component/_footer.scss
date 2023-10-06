@@ -8,15 +8,8 @@
 }
 
 .menubar-footer {
-    padding: 12px 20px 20px;
-    &.footer-fixed {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        background: $white;
-    }
+    padding: 15px 16px 20px;
+
     .inner-bar {
         padding-left: 0;
         padding-right: 0;
@@ -27,22 +20,34 @@
         align-items: center;
         li {
             padding: 0 0;
-            width: 20%;
+            width: 25%;
             a {
-                color: $secondary;
+                color: var(--secondary);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 4px;
-                font-size: 12px;
+                .icon {
+                    font-size: 20px;
+                }
             }
             &.active {
                 a {
-                    color: $primary;
-                    font-weight: 600;
-                   
+                    color: var(--white);
+                    .icon{
+                        color: var(--primary);
+                    }
                 }
             }
         }
     }
+}
+
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--menuDark);
 }

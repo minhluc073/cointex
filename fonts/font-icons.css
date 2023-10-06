@@ -91,7 +91,6 @@
 }
 .icon-noti:before {
   content: "\e914";
-  color: #fff;
 }
 .icon-view-hide:before {
   content: "\e900";
@@ -103,7 +102,6 @@
 }
 .icon-history:before {
   content: "\e916";
-  color: #fff;
 }
 .icon-cancel:before {
   content: "\e92a";
@@ -111,8 +109,6 @@
 }
 .icon-left-btn:before {
   content: "\e917";
-  color: #fff;
-  font-size: 16px;
 }
 .icon-check:before {
   content: "\e923";
@@ -128,31 +124,25 @@
 }
 .icon-select-down:before {
   content: "\e91a";
-  color: #fff;
+
 }
 .icon-way2:before {
   content: "\e91b";
-  color: #fff;
 }
 .icon-way:before {
   content: "\e91c";
-  color: #fff;
 }
 .icon-wallet2:before {
   content: "\e91d";
-  color: #fff;
 }
 .icon-wallet:before {
   content: "\e91e";
-  color: #fff;
 }
 .icon-earn2:before {
   content: "\e91f";
-  color: #fff;
 }
 .icon-earn:before {
   content: "\e920";
-  color: #fff;
 }
 .icon-convert2:before {
   content: "\e921";
@@ -164,19 +154,15 @@
 }
 .icon-exchange2:before {
   content: "\e924";
-  color: #fff;
 }
 .icon-exchange:before {
   content: "\e925";
-  color: #fff;
 }
 .icon-home2:before {
   content: "\e926";
-  color: #fff;
 }
 .icon-home:before {
   content: "\e927";
-  color: #7a798a;
 }
 .icon-tag:before {
   content: "\e928";
@@ -208,7 +194,6 @@
 }
 .icon-search:before {
   content: "\e92f";
-  color: #fff;
 }
 .icon-robot:before {
   content: "\e930";

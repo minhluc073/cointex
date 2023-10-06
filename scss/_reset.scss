@@ -305,7 +305,6 @@ h6 {
     font-weight: 600;
     a {
         color: var(--white);
-        
     }
 }
 h5 {
@@ -450,6 +449,9 @@ label {
 .bg-surface {
     background-color: var(--surface);
 }
+.bg-menuDark {
+    background-color: var(--menuDark);
+}
 .text-primary {
     color: var(--primary) !important;
 }
@@ -458,6 +460,9 @@ label {
 }
 .text-white {
     color: var(--white) !important;
+}
+.text-red {
+    color: var(--red);
 }
 .text-large {
     font-size: 16px;
@@ -562,6 +567,10 @@ label {
 .mb--50 {
     margin-bottom: -50px;
 }
+.m--16 {
+    margin-left: -16px;
+    margin-right: -16px;
+}
 
 // padding
 .p-10 {
@@ -627,8 +636,14 @@ label {
 .pt-50 {
     padding-top: 50px;
 }
-.pt-65 {
-    padding-top: 65px;
+.pt-64 {
+    padding-top: 64px;
+}
+.pt-68 {
+    padding-top: 68px;
+}
+.pt-70 {
+    padding-top: 70px;
 }
 
 .line-t {
@@ -662,7 +677,7 @@ label {
 .grid-5 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    justify-content:  space-between;
+    justify-content: space-between;
 }
 .gap-4 {
     gap: 4px !important;
@@ -700,4 +715,22 @@ label {
 }
 .rolate-90 {
     transform: rotate(90deg);
+}
+
+// icon
+.icon-search {
+    color: var(--white);
+    font-size: 24px;
+}
+.icon-noti {
+    color: var(--white);
+    font-size: 24px;
+}
+.icon-select-down {
+    color: var(--white);
+    font-size: 12px;
+}
+.icon-left-btn {
+    color: var(--white);
+    font-size: 12px;
 }

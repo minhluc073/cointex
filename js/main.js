@@ -3,17 +3,17 @@
  * otp input
  * range slider one
  * range slider two
- * clear Item 
- * block delete 
+ * clear Item
+ * block delete
  * active photo
  * back Page
  * press toggles
  * clear Text
  * message
  * gallery
- * custom select 
+ * custom select
  * active Suggestions
- * preloader 
+ * preloader
  */
 (function ($) {
   "use strict";
@@ -156,7 +156,7 @@
       });
     });
   };
-   /* block delete 
+  /* block delete 
   ------------------------------------------------------------------------------------- */
   var dlBlock = function () {
     $(".list-favorite").on("click", function (event) {
@@ -254,18 +254,39 @@
   };
   /* load more
   ------------------------------------------------------------------------------------- */
-  var loadmore = function() {
-    if ($('ul').hasClass('loadmore-item')) {
-        $(".fl-item").slice(0, 3).show();
-        $("#button-loadmore").on('click', function (e) {
-            e.preventDefault();
-            $(".fl-item:hidden").slice(0, 3).slideDown();
-            if ($(".fl-item:hidden").length == 0) {
-                $("#button-loadmore").hide();
-            }
-        });
-    }   
-};
+  var loadmore = function () {
+    if ($("ul").hasClass("loadmore-item")) {
+      $(".fl-item").slice(0, 3).show();
+      $("#button-loadmore").on("click", function (e) {
+        e.preventDefault();
+        $(".fl-item:hidden").slice(0, 3).slideDown();
+        if ($(".fl-item:hidden").length == 0) {
+          $("#button-loadmore").hide();
+        }
+      });
+    }
+  };
+  /* tab Slide 
+  ------------------------------------------------------------------------------------- */
+  var tabSlide = function () {
+    if ($(".tab-slide").length > 0) {
+      var $1 = $(".tab-slide li.active").width();
+      var $2 = $(".tab-slide li.active").position().left;
+      $(".nav-item-slide").css({
+        width: $1,
+        transform: "translateX(" +$2 + "px)",
+      });
+      $(".tab-slide li").on("click", function () {
+        var itemTab = $(this).parent().find("li");
+        $(itemTab).removeClass("active");
+        $(this).addClass("active");
+        var $3 = $(this).width();
+        var $4 = $(this).position().left;
+        var sideEffect = $(this).parent().find(".item-slide-effect");
+        $(sideEffect).css({ width: $3, transform: "translateX(" + $4 + "px)" });
+      });
+    }
+  };
   /* preloader 
   ------------------------------------------------------------------------------------- */
   var preloader = function () {
@@ -292,6 +313,7 @@
     activePhoto();
     activeSuggest();
     loadmore();
+    tabSlide();
     preloader();
   });
 })(jQuery);

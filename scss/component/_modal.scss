@@ -54,11 +54,9 @@
                 right: 0;
                 bottom: 0;
                 top: 0;
-                .modal-body {
-                    overflow: auto;
-                    padding: 0;
-                    padding-bottom: 30px;
-                }
+                background-color: var(--surface);
+                
+               
             }
         }
         &.show {
