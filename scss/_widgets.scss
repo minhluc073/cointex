@@ -85,3 +85,10 @@
     height: 30px;
     @include flex(center, flex-end);
 }
+.listview-item-check {
+    padding: 10px 16px;
+    &.active{
+        color: var(--primary);
+        background-color: var(--line);
+    }
+}

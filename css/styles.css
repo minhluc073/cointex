@@ -476,6 +476,14 @@ label {
   margin-right: auto;
 }
 
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
 .bg-surface {
   background-color: var(--surface);
 }
@@ -546,6 +554,10 @@ label {
 
 .mb-8 {
   margin-bottom: 8px;
+}
+
+.mt-2 {
+  margin-top: 2px !important;
 }
 
 .mt-4 {
@@ -643,6 +655,10 @@ label {
 
 .p-10 {
   padding: 10px;
+}
+
+.p-12 {
+  padding: 12px;
 }
 
 .p-16 {
@@ -853,7 +869,7 @@ label {
 
 .icon-left-btn {
   color: var(--white);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .icon-barcode {
@@ -863,7 +879,7 @@ label {
 
 .icon-arr-right {
   color: var(--white);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .icon-funnel {
@@ -1296,6 +1312,16 @@ label {
   border-radius: 30px;
 }
 
+.modal .modal-content {
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--menuDark);
+}
+.modal .modal-sm {
+  max-width: 375px;
+  margin: 0 auto;
+}
 .modal.action-sheet {
   z-index: 5000;
 }
@@ -1313,12 +1339,6 @@ label {
 }
 .modal.action-sheet.show .modal-dialog {
   transform: translate(0, 0);
-}
-.modal.action-sheet .modal-content {
-  box-shadow: none;
-  border: 0;
-  border-radius: 0;
-  background-color: var(--menuDark);
 }
 .modal.action-sheet .modal-header {
   padding: 16px;
@@ -1357,8 +1377,12 @@ label {
   overflow: auto;
 }
 .modal.modalCenter .modal-dialog-centered {
-  margin: 0 52px;
+  margin: 0 30px;
   max-width: 100%;
+}
+.modal.modalCenter .modal-content {
+  border-radius: 14px;
+  backdrop-filter: blur(11px);
 }
 .modal.fade {
   transition: opacity 0.3s linear;
@@ -1637,6 +1661,14 @@ label {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.listview-item-check {
+  padding: 10px 16px;
+}
+.listview-item-check.active {
+  color: var(--primary);
+  background-color: var(--line);
 }
 
 .theme-light {

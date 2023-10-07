@@ -445,7 +445,12 @@ label {
     margin-left: auto;
     margin-right: auto;
 }
-
+.fs-12{
+    font-size: 12px !important;
+}
+.fs-16 {
+    font-size: 16px !important;
+}
 .bg-surface {
     background-color: var(--surface);
 }
@@ -502,6 +507,9 @@ label {
 //  margin
 .mb-8 {
     margin-bottom: 8px;
+}
+.mt-2 {
+    margin-top: 2px !important;
 }
 .mt-4 {
     margin-top: 4px !important;
@@ -578,6 +586,9 @@ label {
 // padding
 .p-10 {
     padding: 10px;
+}
+.p-12 {
+    padding: 12px;
 }
 .p-16 {
     padding: 16px;
@@ -682,6 +693,7 @@ label {
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
 }
+
 .gap-4 {
     gap: 4px !important;
 }
@@ -725,9 +737,7 @@ label {
 .rolate-90 {
     transform: rotate(90deg);
 }
-.w-break {
-    
-}
+
 // icon
 .icon-search {
     color: var(--white);
@@ -743,7 +753,7 @@ label {
 }
 .icon-left-btn {
     color: var(--white);
-    font-size: 12px;
+    font-size: 14px;
 }
 .icon-barcode {
     color: var(--white);
@@ -751,7 +761,7 @@ label {
 }
 .icon-arr-right {
     color: var(--white);
-    font-size: 12px;
+    font-size: 14px;
 }
 .icon-funnel {
     font-size: 24px;

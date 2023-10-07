@@ -1,4 +1,14 @@
 .modal {
+    .modal-content {
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        background-color: var(--menuDark);
+    }
+    .modal-sm {
+        max-width: 375px;
+        margin: 0 auto;
+    }
     &.action-sheet {
         z-index: 5000;
         .modal-dialog {
@@ -18,12 +28,7 @@
                 transform: translate(0, 0);
             }
         }
-        .modal-content {
-            box-shadow: none;
-            border: 0;
-            border-radius: 0;
-            background-color: var(--menuDark);
-        }
+
         .modal-header {
             padding: 16px;
             border-bottom: 1px solid var(--line);
@@ -68,10 +73,15 @@
     }
     &.modalCenter {
         .modal-dialog-centered {
-            margin: 0 52px;
+            margin: 0 30px;
             max-width: 100%;
         }
+        .modal-content {
+            border-radius: 14px;
+            backdrop-filter: blur(11px);
+        }
     }
+    
     &.fade {
         transition: opacity 0.3s linear;
     }
