@@ -55,8 +55,6 @@
                 bottom: 0;
                 top: 0;
                 background-color: var(--surface);
-                
-               
             }
         }
         &.show {
@@ -84,3 +82,9 @@
         opacity: 0.8;
     }
 }
+// #filterHistory {
+//     z-index: 1062 !important;
+// }
+// .modal-backdrop.show:nth-of-type(even) {
+//     z-index: 1061 !important;
+// }

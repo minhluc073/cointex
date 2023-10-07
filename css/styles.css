@@ -480,6 +480,10 @@ label {
   background-color: var(--surface);
 }
 
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
 .bg-menuDark {
   background-color: var(--menuDark);
 }
@@ -808,6 +812,14 @@ label {
   column-gap: 16px;
 }
 
+.rg-16 {
+  row-gap: 16px;
+}
+
+.cg-25 {
+  column-gap: 25px;
+}
+
 .lr-radius {
   border-radius: 12px 12px 0px 0px;
 }
@@ -842,6 +854,29 @@ label {
 .icon-left-btn {
   color: var(--white);
   font-size: 12px;
+}
+
+.icon-barcode {
+  color: var(--white);
+  font-size: 32px;
+}
+
+.icon-arr-right {
+  color: var(--white);
+  font-size: 12px;
+}
+
+.icon-funnel {
+  font-size: 24px;
+}
+
+.icon-cancel {
+  font-size: 16px;
+}
+
+.icon-share {
+  font-size: 20px;
+  color: var(--white);
 }
 
 .header {
@@ -1014,6 +1049,15 @@ label {
 }
 .tag-xs.round-1 {
   border-radius: 14.178px;
+}
+.tag-xs.style-2 {
+  padding: 4px 12px;
+}
+.tag-xs.round-2 {
+  border-radius: 50px;
+}
+.tag-xs.red {
+  background-color: var(--red);
 }
 
 .box-auth-pass {
@@ -1496,6 +1540,7 @@ label {
 }
 .list-item-social .icon {
   font-size: 16px;
+  color: var(--white);
 }
 
 .tf-checkbox {
@@ -1567,6 +1612,31 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.noti-item {
+  padding: 12px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.noti-item .dot-lg {
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.dot-lg {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.arr-right {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .theme-light {

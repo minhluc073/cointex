@@ -61,4 +61,13 @@
     &.round-1 {
         border-radius: 14.178px;
     }
+    &.style-2 {
+        padding: 4px 12px;
+    }
+    &.round-2 {
+        border-radius: 50px;
+    }
+    &.red {
+        background-color: var(--red);
+    }
 }

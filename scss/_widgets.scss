@@ -65,3 +65,23 @@
         align-items: center;
     }
 }
+.noti-item {
+    padding: 12px;
+    border-radius: 10px;
+    display: inline-block;
+    .dot-lg {
+        flex-shrink: 0;
+        margin-top: 5px;
+    }
+}
+.dot-lg {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50px;
+}
+.arr-right {
+    width: 30px;
+    height: 30px;
+    @include flex(center, flex-end);
+}
