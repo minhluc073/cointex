@@ -100,7 +100,6 @@
 }
 .icon-check:before {
   content: "\e923";
-  color: #2dc28d;
 }
 .icon-view:before {
   content: "\e918";

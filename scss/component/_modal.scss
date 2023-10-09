@@ -19,9 +19,8 @@
             right: 0;
             z-index: 10000;
             transform: translate(0, 100%);
-            max-width: 100%;
             max-width: 1024px;
-            margin: 0 auto;
+            margin: 0 auto !important;
         }
         &.show {
             .modal-dialog {
@@ -81,7 +80,7 @@
             backdrop-filter: blur(11px);
         }
     }
-    
+
     &.fade {
         transition: opacity 0.3s linear;
     }

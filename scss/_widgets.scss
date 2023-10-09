@@ -20,8 +20,49 @@
     &:checked {
         background-color: var(--surface);
     }
+    &.style-2 {
+        width: 12px;
+        height: 12px;
+        border-radius: 50px;
+        &:checked {
+            border: 1px solid var(--secondary);
+        }
+        &::before {
+            font-size: 6px;
+        }
+    }
 }
+// switch-check
+.tf-switch-check {
+    position: relative;
+    height: 20px;
+    width: 38px;
+    -webkit-appearance: none;
+    background: var(--secondary2);
+    border-radius: 100px;
+    transition: 0.5s;
+    margin-right: 0;
 
+    &::before {
+        content: "";
+        border-radius: 100px;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background: var(--white);
+        transition: 0.5s;
+    }
+    &:checked:checked[type="checkbox"] {
+        background: var(--primary);
+        transition: 0.5s;
+        &::before {
+            background: var(--white);
+            left: 20px;
+        }
+    }
+}
 .box-account {
     display: flex;
     align-items: center;
@@ -85,10 +126,26 @@
     height: 30px;
     @include flex(center, flex-end);
 }
+.listview-item-check-style2,
 .listview-item-check {
     padding: 10px 16px;
-    &.active{
+    &.active {
         color: var(--primary);
         background-color: var(--line);
+        position: relative;
+        .icon {
+            display: block;
+        }
+    }
+    .icon {
+        color: var(--primary);
+        font-size: 24px;
+        display: none;
+    }
+}
+.listview-item-check-style2 {
+    color: var(--white);
+    &.active {
+        background-color: var(--surface);
     }
 }
