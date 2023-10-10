@@ -32,7 +32,6 @@
         }
     }
 }
-// switch-check
 .tf-switch-check {
     position: relative;
     height: 20px;
@@ -63,6 +62,21 @@
         }
     }
 }
+.tf-radio {
+    position: relative;
+    background-color: var(--surface);
+    border-radius: 50px;
+    cursor: pointer;
+    outline: 0;
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+    &:checked {
+        border: 4px solid var(--surface);
+        background-color: var(--primary);
+    }
+}
+
 .box-account {
     display: flex;
     align-items: center;
@@ -86,6 +100,11 @@
         color: var(--white);
         font-size: 32px;
     }
+}
+.tf-list-item-v2 {
+    padding: 16px;
+    border-radius: 8px;
+    @include flex(center, space-between);
 }
 .coin-item {
     display: flex;
@@ -121,6 +140,12 @@
     display: inline-block;
     border-radius: 50px;
 }
+.dot-md {
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 50px;
+}
 .arr-right {
     width: 30px;
     height: 30px;
@@ -147,5 +172,24 @@
     color: var(--white);
     &.active {
         background-color: var(--surface);
+    }
+}
+.accent-box{
+    padding: 20px 16px;
+    border-radius: 10px;
+}
+.icon-round-check {
+    position: relative;
+    border-radius: 50%;
+    @include flex(center, center);
+    &::before{
+        position: absolute;
+        content: "\e923";
+        font-family: $fontIcon;
+        font-size: 8px;
+    }
+    &.xs {
+        width: 16px;
+        height: 16px;
     }
 }

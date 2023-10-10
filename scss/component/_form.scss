@@ -2,18 +2,31 @@
     position: relative;
 }
 
-.form-select {
-    padding: 12px;
-    background-color: var(--surface);
-    border: 1px solid var(--white);
+.tf-select {
+    position: relative;
+    padding: 12px 16px;
+    background-color: var(--menuDark);
+    border: 1px solid var(--menuDark);
     border-radius: 8px;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 26px;
     color: var(--secondary);
+    background-image: unset;
     &:focus {
-        border-color: var(--white);
-        box-shadow: unset;
+        border-color: var(--menuDark);
+    }
+  
+}
+.select-wrapper {
+    position: relative;
+    &::after {
+        content: "\e91a";
+        position: absolute;
+        font-family: $fontIcon;
+        font-size: 12px;
+        top: 18px;
+        right: 16px;
+        color: var(--white);
     }
 }
 
@@ -62,5 +75,3 @@
         line-height: 34px;
     }
 }
-
-

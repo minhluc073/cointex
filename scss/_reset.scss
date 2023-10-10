@@ -431,6 +431,12 @@ label {
     line-height: 18px;
     color: var(--secondary);
 }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+}
 
 .tf-container {
     max-width: 1024px;
@@ -445,14 +451,23 @@ label {
     margin-left: auto;
     margin-right: auto;
 }
-.fs-12{
+.fs-12 {
     font-size: 12px !important;
 }
 .fs-16 {
     font-size: 16px !important;
 }
+.fs-20 {
+    font-size: 20px !important;
+}
+.fs-24 {
+    font-size: 24px !important;
+}
 .bg-surface {
     background-color: var(--surface);
+}
+.bg-secondary {
+    background-color: var(--secondary) !important;
 }
 .bg-primary {
     background-color: var(--primary) !important;
@@ -572,11 +587,17 @@ label {
 .mb-20 {
     margin-bottom: 20px;
 }
+.mb-60 {
+    margin-bottom: 60px;
+}
 .mr--20 {
     margin-right: -20px;
 }
 .mb--50 {
     margin-bottom: -50px;
+}
+.mr--16 {
+    margin-right: -16px;
 }
 .m--16 {
     margin-left: -16px;
@@ -584,6 +605,9 @@ label {
 }
 
 // padding
+.pb-4 {
+    padding-bottom: 4px;
+}
 .p-10 {
     padding: 10px;
 }
@@ -640,6 +664,9 @@ label {
 }
 .pt-30 {
     padding-top: 30px;
+}
+.pl-32 {
+    padding-left: 32px;
 }
 .pt-40 {
     padding-top: 40px;
@@ -725,6 +752,12 @@ label {
 .cg-25 {
     column-gap: 25px;
 }
+.cg-8 {
+    column-gap: 8px;
+}
+.rg-12 {
+    row-gap: 12px;
+}
 .lr-radius {
     border-radius: 12px 12px 0px 0px;
 }
@@ -739,11 +772,9 @@ label {
 }
 
 // icon
-.icon-search {
-    color: var(--white);
-    font-size: 24px;
-}
-.icon-noti {
+.icon-search,
+.icon-noti,
+.icon-question {
     color: var(--white);
     font-size: 24px;
 }
@@ -751,7 +782,8 @@ label {
     color: var(--white);
     font-size: 12px;
 }
-.icon-left-btn {
+.icon-left-btn,
+.icon-arr-right {
     color: var(--white);
     font-size: 14px;
 }
@@ -759,17 +791,14 @@ label {
     color: var(--white);
     font-size: 32px;
 }
-.icon-arr-right {
-    color: var(--white);
-    font-size: 14px;
-}
 .icon-funnel {
     font-size: 24px;
 }
-.icon-cancel{
+.icon-cancel {
     font-size: 16px;
 }
-.icon-share {
+.icon-share,
+.icon-mobile {
     font-size: 20px;
     color: var(--white);
 }

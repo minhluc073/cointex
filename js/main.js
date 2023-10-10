@@ -210,6 +210,16 @@
       });
     }
   };
+  /* setTimeIn
+  ------------------------------------------------------------------------------------- */
+  var showNotiAccount = function () {
+    if ($("#notiAccount").length > 0) {
+      setTimeout(function () {
+        $("#notiAccount").modal("show");
+      }, 2000);
+    }
+  };
+
   /* preloader 
   ------------------------------------------------------------------------------------- */
   var preloader = function () {
@@ -231,6 +241,7 @@
     activeSuggest();
     changeValue();
     loadmore();
+    showNotiAccount();
     tabSlide();
     preloader();
   });

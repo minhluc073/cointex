@@ -462,6 +462,13 @@ label {
   color: var(--secondary);
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
+}
+
 .tf-container {
   max-width: 1024px;
   margin-left: auto;
@@ -485,8 +492,20 @@ label {
   font-size: 16px !important;
 }
 
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-24 {
+  font-size: 24px !important;
+}
+
 .bg-surface {
   background-color: var(--surface);
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
 }
 
 .bg-primary {
@@ -641,6 +660,10 @@ label {
   margin-bottom: 20px;
 }
 
+.mb-60 {
+  margin-bottom: 60px;
+}
+
 .mr--20 {
   margin-right: -20px;
 }
@@ -649,9 +672,17 @@ label {
   margin-bottom: -50px;
 }
 
+.mr--16 {
+  margin-right: -16px;
+}
+
 .m--16 {
   margin-left: -16px;
   margin-right: -16px;
+}
+
+.pb-4 {
+  padding-bottom: 4px;
 }
 
 .p-10 {
@@ -728,6 +759,10 @@ label {
 
 .pt-30 {
   padding-top: 30px;
+}
+
+.pl-32 {
+  padding-left: 32px;
 }
 
 .pt-40 {
@@ -837,6 +872,14 @@ label {
   column-gap: 25px;
 }
 
+.cg-8 {
+  column-gap: 8px;
+}
+
+.rg-12 {
+  row-gap: 12px;
+}
+
 .lr-radius {
   border-radius: 12px 12px 0px 0px;
 }
@@ -853,12 +896,9 @@ label {
   transform: rotate(90deg);
 }
 
-.icon-search {
-  color: var(--white);
-  font-size: 24px;
-}
-
-.icon-noti {
+.icon-search,
+.icon-noti,
+.icon-question {
   color: var(--white);
   font-size: 24px;
 }
@@ -868,7 +908,8 @@ label {
   font-size: 12px;
 }
 
-.icon-left-btn {
+.icon-left-btn,
+.icon-arr-right {
   color: var(--white);
   font-size: 14px;
 }
@@ -876,11 +917,6 @@ label {
 .icon-barcode {
   color: var(--white);
   font-size: 32px;
-}
-
-.icon-arr-right {
-  color: var(--white);
-  font-size: 14px;
 }
 
 .icon-funnel {
@@ -891,7 +927,8 @@ label {
   font-size: 16px;
 }
 
-.icon-share {
+.icon-share,
+.icon-mobile {
   font-size: 20px;
   color: var(--white);
 }
@@ -1081,19 +1118,32 @@ label {
   position: relative;
 }
 
-.form-select {
-  padding: 12px;
-  background-color: var(--surface);
-  border: 1px solid var(--white);
+.tf-select {
+  position: relative;
+  padding: 12px 16px;
+  background-color: var(--menuDark);
+  border: 1px solid var(--menuDark);
   border-radius: 8px;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 26px;
   color: var(--secondary);
+  background-image: unset;
 }
-.form-select:focus {
-  border-color: var(--white);
-  box-shadow: unset;
+.tf-select:focus {
+  border-color: var(--menuDark);
+}
+
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper::after {
+  content: "\e91a";
+  position: absolute;
+  font-family: "icomoon";
+  font-size: 12px;
+  top: 18px;
+  right: 16px;
+  color: var(--white);
 }
 
 .show-pass,
@@ -1635,6 +1685,21 @@ label {
   left: 20px;
 }
 
+.tf-radio {
+  position: relative;
+  background-color: var(--surface);
+  border-radius: 50px;
+  cursor: pointer;
+  outline: 0;
+  width: 16px;
+  height: 16px;
+  -webkit-appearance: none;
+}
+.tf-radio:checked {
+  border: 4px solid var(--surface);
+  background-color: var(--primary);
+}
+
 .box-account {
   display: flex;
   align-items: center;
@@ -1658,6 +1723,14 @@ label {
 .tf-list-item .icon {
   color: var(--white);
   font-size: 32px;
+}
+
+.tf-list-item-v2 {
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .coin-item {
@@ -1697,6 +1770,13 @@ label {
   border-radius: 50px;
 }
 
+.dot-md {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  border-radius: 50px;
+}
+
 .arr-right {
   width: 30px;
   height: 30px;
@@ -1731,6 +1811,29 @@ label {
 }
 .listview-item-check-style2.active {
   background-color: var(--surface);
+}
+
+.accent-box {
+  padding: 20px 16px;
+  border-radius: 10px;
+}
+
+.icon-round-check {
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-round-check::before {
+  position: absolute;
+  content: "\e923";
+  font-family: "icomoon";
+  font-size: 8px;
+}
+.icon-round-check.xs {
+  width: 16px;
+  height: 16px;
 }
 
 .theme-light {
