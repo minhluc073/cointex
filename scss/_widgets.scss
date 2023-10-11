@@ -193,3 +193,22 @@
         height: 16px;
     }
 }
+
+.success_box {
+    background-color: var(--white) !important;
+    padding: 80px 16px 16px;
+    border-radius: 8px !important;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    .icon-1 {
+        position: absolute;
+        top: -10%;
+        left: 50%;
+    }
+    .icon-2 {
+        position: absolute;
+        right: 28%;
+        top: -2%;
+    }
+}

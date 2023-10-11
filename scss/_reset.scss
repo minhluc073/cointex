@@ -464,7 +464,7 @@ select {
     font-size: 24px !important;
 }
 .bg-surface {
-    background-color: var(--surface);
+    background-color: var(--surface) !important;
 }
 .bg-secondary {
     background-color: var(--secondary) !important;
@@ -474,6 +474,9 @@ select {
 }
 .bg-menuDark {
     background-color: var(--menuDark);
+}
+.text-surface {
+    color: var(--surface) !important;
 }
 .text-primary {
     color: var(--primary) !important;
@@ -656,8 +659,8 @@ select {
 .pb-72 {
     padding-bottom: 72px;
 }
-.pb-80 {
-    padding-bottom: 80px;
+.pb-90 {
+    padding-bottom: 90px;
 }
 .pb-200 {
     padding-bottom: 200px;

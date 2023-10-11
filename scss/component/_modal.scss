@@ -84,6 +84,11 @@
     &.fade {
         transition: opacity 0.3s linear;
     }
+    &#successful{
+        .modal-dialog-centered {
+            margin: 0 23px;
+        }
+    }
 }
 .modal-backdrop {
     background: var(--backdrop);

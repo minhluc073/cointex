@@ -501,7 +501,7 @@ select {
 }
 
 .bg-surface {
-  background-color: var(--surface);
+  background-color: var(--surface) !important;
 }
 
 .bg-secondary {
@@ -514,6 +514,10 @@ select {
 
 .bg-menuDark {
   background-color: var(--menuDark);
+}
+
+.text-surface {
+  color: var(--surface) !important;
 }
 
 .text-primary {
@@ -749,8 +753,8 @@ select {
   padding-bottom: 72px;
 }
 
-.pb-80 {
-  padding-bottom: 80px;
+.pb-90 {
+  padding-bottom: 90px;
 }
 
 .pb-200 {
@@ -1002,6 +1006,10 @@ select {
   border-radius: 8px;
   padding: 4px;
 }
+.tab-slide.style-2 {
+  padding: 0;
+  background-color: var(--menuDark);
+}
 
 .wallet-tabs {
   display: grid;
@@ -1039,12 +1047,46 @@ select {
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
+.item-slide-effect.style-2 {
+  background-color: var(--white);
+}
+
+.indentity-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.indentity-tabs .nav-link {
+  padding: 0px;
+  height: 2px;
+  border-radius: 0;
+  margin: 0;
+}
+.indentity-tabs .nav-link:hover, .indentity-tabs .nav-link:focus {
+  border-color: var(--surface);
+  border-radius: 0;
+}
+.indentity-tabs .nav-link.active {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.tabs-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 2px;
+  background-color: var(--menuDark);
+}
+.tabs-line .active {
+  background-color: var(--white);
+}
 
 .tf-btn {
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
   border-radius: 8px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1173,6 +1215,9 @@ select {
 
 .label-ip {
   width: 100%;
+}
+.label-ip .tf-select:focus {
+  border-color: var(--white);
 }
 
 .label-ip:focus-within {
@@ -1437,6 +1482,9 @@ select {
 }
 .modal.fade {
   transition: opacity 0.3s linear;
+}
+.modal#successful .modal-dialog-centered {
+  margin: 0 23px;
 }
 
 .modal-backdrop {
@@ -1834,6 +1882,25 @@ select {
 .icon-round-check.xs {
   width: 16px;
   height: 16px;
+}
+
+.success_box {
+  background-color: var(--white) !important;
+  padding: 80px 16px 16px;
+  border-radius: 8px !important;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.success_box .icon-1 {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+}
+.success_box .icon-2 {
+  position: absolute;
+  right: 28%;
+  top: -2%;
 }
 
 .theme-light {

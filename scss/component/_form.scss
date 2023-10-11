@@ -54,6 +54,10 @@
 }
 .label-ip {
     width: 100%;
+ 
+    .tf-select:focus{
+        border-color: var(--white);
+    }
 }
 .label-ip:focus-within {
     color: var(--white);
