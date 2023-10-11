@@ -112,9 +112,9 @@
   };
   /* clear Text
   ------------------------------------------------------------------------------------- */
-  var clearText = function () {
-    $(".icon-cancel").on("click", function () {
-      $(".ip-field").val("");
+  var clearInput = function () {
+    $(".icon-close").on("click", function () {
+      $(".clear-ip").val("");
     });
   };
 
@@ -235,7 +235,7 @@
     otpInput();
     clearItem();
     backPage();
-    clearText();
+    clearInput();
     cusSelect();
     pressToggle();
     activeSuggest();

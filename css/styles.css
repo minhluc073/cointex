@@ -1156,6 +1156,11 @@ select {
   background-color: var(--red);
 }
 
+input[type=text].ip-style2 {
+  padding: 12px;
+  border: 1px solid var(--line);
+}
+
 .box-auth-pass {
   position: relative;
 }
@@ -1239,6 +1244,22 @@ select {
   font-size: 22px;
   font-weight: 600;
   line-height: 34px;
+}
+
+.box-input-field {
+  position: relative;
+}
+.box-input-field .icon-close {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  color: var(--secondary);
+}
+
+.clear-ip:valid ~ .icon-close {
+  display: block;
 }
 
 .footer {
@@ -1866,6 +1887,11 @@ select {
   border-radius: 10px;
 }
 
+.accent-box-v2 {
+  padding: 16px;
+  border-radius: 8px;
+}
+
 .icon-round-check {
   position: relative;
   border-radius: 50%;
@@ -1966,6 +1992,15 @@ select {
   height: 8px;
   border: 1px solid var(--white);
   box-shadow: 0px 4px 20px 0px rgba(158, 158, 158, 0.25);
+}
+
+.tag-money {
+  padding: 12px 32px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--menuDark);
 }
 
 /* animation */
