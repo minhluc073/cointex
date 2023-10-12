@@ -1506,6 +1506,13 @@ input[type=text].ip-style2 {
 .modal.action-sheet .modal-body {
   padding: 20px 16px;
 }
+.modal.action-sheet.sheet-down .modal-dialog {
+  top: 0;
+  transform: translateY(100%);
+}
+.modal.action-sheet.sheet-down.show .modal-dialog {
+  transform: translateY(0);
+}
 .modal.modalRight .modal-dialog {
   transform: translate(100%, 0) !important;
   min-width: 100%;
@@ -1817,6 +1824,25 @@ input[type=text].ip-style2 {
   border: 4px solid var(--surface);
   background-color: var(--primary);
 }
+.tf-radio.style-2 {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tf-radio.style-2::before {
+  content: "\e923";
+  position: absolute;
+  font-family: "icomoon";
+  font-size: 10px;
+  color: var(--surface);
+}
+.tf-radio.style-2:checked {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
 
 .box-account {
   display: flex;
@@ -1917,32 +1943,49 @@ input[type=text].ip-style2 {
   justify-content: flex-end;
 }
 
-.listview-item-check-style2,
-.listview-item-check {
+.item-check-style2,
+.item-check {
   padding: 10px 16px;
 }
-.listview-item-check-style2.active,
-.listview-item-check.active {
+.item-check-style2.active,
+.item-check.active {
   color: var(--primary);
   background-color: var(--line);
   position: relative;
 }
-.listview-item-check-style2.active .icon,
-.listview-item-check.active .icon {
+.item-check-style2.active .icon,
+.item-check.active .icon {
   display: block;
 }
-.listview-item-check-style2 .icon,
-.listview-item-check .icon {
+.item-check-style2 .icon,
+.item-check .icon {
   color: var(--primary);
   font-size: 24px;
   display: none;
 }
 
-.listview-item-check-style2 {
+.item-check-style2 {
   color: var(--white);
 }
-.listview-item-check-style2.active {
+.item-check-style2.active {
   background-color: var(--surface);
+}
+
+.item-check-style3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.item-check-style3 .content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.item-check-style3 .content .icon {
+  font-size: 24px;
+  color: var(--white);
 }
 
 .accent-box {

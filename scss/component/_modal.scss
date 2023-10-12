@@ -35,6 +35,20 @@
         .modal-body {
             padding: 20px 16px;
         }
+
+        &.sheet-down{
+            .modal-dialog {
+                top: 0;
+                transform: translateY(100%);
+                
+            }
+            &.show {
+                .modal-dialog {
+                    transform: translateY(0);
+
+                }
+            }
+        }
     }
 
     &.modalRight {

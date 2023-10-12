@@ -75,6 +75,23 @@
         border: 4px solid var(--surface);
         background-color: var(--primary);
     }
+    &.style-2 {
+        width: 22px;
+        height: 22px;
+        position: relative;
+        @include flex(center, center);
+        &::before {
+            content: "\e923";
+            position: absolute;
+            font-family: $fontIcon;
+            font-size: 10px;
+            color: var(--surface);
+        }
+        &:checked {
+            background-color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+    }
 }
 
 .box-account {
@@ -168,8 +185,8 @@
     height: 30px;
     @include flex(center, flex-end);
 }
-.listview-item-check-style2,
-.listview-item-check {
+.item-check-style2,
+.item-check {
     padding: 10px 16px;
     &.active {
         color: var(--primary);
@@ -185,12 +202,28 @@
         display: none;
     }
 }
-.listview-item-check-style2 {
+.item-check-style2 {
     color: var(--white);
     &.active {
         background-color: var(--surface);
     }
 }
+
+.item-check-style3 {
+    @include flex(center, space-between);
+    gap: 20px;
+    .content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .icon {
+            font-size: 24px;
+            color: var(--white);
+        }
+    }
+}
+
 .accent-box {
     padding: 20px 16px;
     border-radius: 10px;

@@ -130,19 +130,19 @@
   ------------------------------------------------------------------------------------- */
   var activeSuggest = function () {
     if ($("div").hasClass("action-sheet")) {
-      $(".listview-item-check").on("click", function () {
+      $(".item-check").on("click", function () {
         $(this)
           .parents(".action-sheet")
-          .find(".listview-item-check.active")
+          .find(".item-check.active")
           .removeClass("active");
         $(this).addClass("active");
       });
     }
     if ($("div").hasClass("modalRight")) {
-      $(".listview-item-check-style2").on("click", function () {
+      $(".item-check-style2").on("click", function () {
         $(this)
           .parents(".modalRight")
-          .find(".listview-item-check-style2.active")
+          .find(".item-check-style2.active")
           .removeClass("active");
         $(this).addClass("active");
       });
@@ -191,8 +191,8 @@
   /* modal second bootstrap
   ------------------------------------------------------------------------------------- */
   var clickModalSecond = function () {
-    $('.btn-filter-history').click(function () {
-      $('#filterHistory').modal('show');
+    $(".btn-filter-history").click(function () {
+      $("#filterHistory").modal("show");
     });
   };
 
