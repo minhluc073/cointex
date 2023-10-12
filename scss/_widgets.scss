@@ -134,6 +134,23 @@
         margin-top: 5px;
     }
 }
+.card-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .img {
+        width: 48px;
+        height: 32px;
+    }
+    &.style-2 {
+        .img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
 .dot-lg {
     width: 8px;
     height: 8px;
@@ -180,6 +197,14 @@
 }
 .accent-box-v2 {
     padding: 16px;
+    border-radius: 8px;
+}
+.accent-box-v3 {
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+.accent-box-v4 {
+    padding: 12px;
     border-radius: 8px;
 }
 .icon-round-check {
@@ -287,6 +312,11 @@
     width: 100%;
     border-radius: 8px;
     background-color: var(--menuDark);
+    border: 1px solid var(--menuDark);
+
+    &.active {
+        border-color: var(--primary);
+    }
 }
 
 /* animation */

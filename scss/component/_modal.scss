@@ -84,7 +84,7 @@
     &.fade {
         transition: opacity 0.3s linear;
     }
-    &#successful{
+    &#successful {
         .modal-dialog-centered {
             margin: 0 23px;
         }
@@ -96,9 +96,12 @@
         opacity: 0.8;
     }
 }
-// #filterHistory {
-//     z-index: 1062 !important;
-// }
-// .modal-backdrop.show:nth-of-type(even) {
-//     z-index: 1061 !important;
-// }
+
+.app-wallet {
+    #filterHistory {
+        z-index: 1062 !important;
+    }
+    .modal-backdrop.show:nth-of-type(even) {
+        z-index: 1061 !important;
+    }
+}

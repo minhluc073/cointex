@@ -705,8 +705,16 @@ select {
   padding-bottom: 4px !important;
 }
 
+.pt-8 {
+  padding-top: 8px;
+}
+
 .pb-8 {
   padding-bottom: 8px;
+}
+
+.pt-10 {
+  padding-top: 10px;
 }
 
 .pt-12 {
@@ -751,6 +759,10 @@ select {
 
 .pb-72 {
   padding-bottom: 72px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
 }
 
 .pb-90 {
@@ -1159,6 +1171,8 @@ select {
 input[type=text].ip-style2 {
   padding: 12px;
   border: 1px solid var(--line);
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .box-auth-pass {
@@ -1260,6 +1274,34 @@ input[type=text].ip-style2 {
 
 .clear-ip:valid ~ .icon-close {
   display: block;
+}
+
+.search-box input {
+  padding-left: 45px;
+  font-size: 11px;
+}
+.search-box input::placeholder {
+  font-size: 12px;
+  line-height: 16px;
+}
+.search-box .icon-search {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+.search-box .icon-close {
+  right: 16px;
+}
+.search-box.style-2 input {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.search-box.style-2 .icon-search {
+  top: 7px;
+  color: var(--secondary);
+}
+.search-box.style-2 .icon-close {
+  top: 7px;
 }
 
 .footer {
@@ -1513,6 +1555,13 @@ input[type=text].ip-style2 {
 }
 .modal-backdrop.show {
   opacity: 0.8;
+}
+
+.app-wallet #filterHistory {
+  z-index: 1062 !important;
+}
+.app-wallet .modal-backdrop.show:nth-of-type(even) {
+  z-index: 1061 !important;
 }
 
 .socials-login .tf-btn.social img {
@@ -1832,6 +1881,20 @@ input[type=text].ip-style2 {
   margin-top: 5px;
 }
 
+.card-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.card-item .img {
+  width: 48px;
+  height: 32px;
+}
+.card-item.style-2 .img {
+  width: 28px;
+  height: 28px;
+}
+
 .dot-lg {
   width: 8px;
   height: 8px;
@@ -1889,6 +1952,16 @@ input[type=text].ip-style2 {
 
 .accent-box-v2 {
   padding: 16px;
+  border-radius: 8px;
+}
+
+.accent-box-v3 {
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.accent-box-v4 {
+  padding: 12px;
   border-radius: 8px;
 }
 
@@ -2001,6 +2074,10 @@ input[type=text].ip-style2 {
   width: 100%;
   border-radius: 8px;
   background-color: var(--menuDark);
+  border: 1px solid var(--menuDark);
+}
+.tag-money.active {
+  border-color: var(--primary);
 }
 
 /* animation */

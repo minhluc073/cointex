@@ -147,9 +147,22 @@
         $(this).addClass("active");
       });
     }
+
+    $(".tag-money").click(function () {
+      $(".tag-money.active").removeClass("active");
+      $(this).addClass("active");
+    });
   };
 
+  /* change value
+  ------------------------------------------------------------------------------------- */
   var changeValue = function () {
+    $(".tag-money").on("click", function () {
+      var val = $(this).text();
+      var str = val.slice(1);
+      $(".value_input").val(str);
+    });
+
     $(".dom-value").click(function () {
       $(".dom-text").text($(this).text());
     });
@@ -172,6 +185,14 @@
 
     $(".currency-val").click(function () {
       $(".text-val-currency").text($(this).text());
+    });
+  };
+
+  /* modal second bootstrap
+  ------------------------------------------------------------------------------------- */
+  var clickModalSecond = function () {
+    $('.btn-filter-history').click(function () {
+      $('#filterHistory').modal('show');
     });
   };
 
@@ -243,6 +264,7 @@
     loadmore();
     showNotiAccount();
     tabSlide();
+    clickModalSecond();
     preloader();
   });
 })(jQuery);

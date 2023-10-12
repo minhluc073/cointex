@@ -1,6 +1,8 @@
 input[type="text"].ip-style2 {
     padding: 12px;
     border: 1px solid var(--line);
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .box-auth-pass {
@@ -80,7 +82,6 @@ input[type="text"].ip-style2 {
         line-height: 34px;
     }
 }
-
 .box-input-field {
     position: relative;
     .icon-close {
@@ -94,4 +95,37 @@ input[type="text"].ip-style2 {
 }
 .clear-ip:valid ~ .icon-close {
     display: block;
+}
+
+.search-box {
+    input {
+        padding-left: 45px;
+        font-size: 11px;
+        &::placeholder {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    .icon-search {
+        position: absolute;
+        top: 15px;
+        left: 16px;
+    }
+    .icon-close {
+        right: 16px;
+    }
+
+    &.style-2 {
+        input {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        .icon-search {
+            top: 7px;
+            color: var(--secondary);
+        }
+        .icon-close {
+            top: 7px;
+        }
+    }
 }
