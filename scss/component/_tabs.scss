@@ -14,7 +14,6 @@
     &.style-2 {
         padding: 0;
         background-color: var(--menuDark);
-
     }
 }
 .wallet-tabs {
@@ -80,7 +79,6 @@
     }
 }
 
-
 .tabs-line {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -88,5 +86,22 @@
     background-color: var(--menuDark);
     .active {
         background-color: var(--white);
+    }
+}
+
+.menu-tab-v3 {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+    .nav-link {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        padding: 0;
+        color: var(--secondary);
+        &.active {
+            color: var(--white);
+        }
     }
 }

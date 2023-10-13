@@ -71,3 +71,16 @@
         background-color: var(--red);
     }
 }
+
+.coin-btn {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 13px;
+    &.increase {
+        background-color: var(--primary);
+    }
+    &.decrease {
+        background-color: var(--red);
+    }
+}

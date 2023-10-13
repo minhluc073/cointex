@@ -1,119 +1,13 @@
-.wrap-swiper {
-    .btn-slider {
-        flex-shrink: 0;
-        margin-right: 8px;
-    }
-}
 
-.cate-swiper {
-    margin-left: unset;
-    margin-right: unset;
-    .swiper-slide {
-        width: auto;
 
-        &.active {
-            .categories-item {
-                color: $white;
-                background-color: $primary;
-                border-color: $primary;
-                svg path {
-                    stroke: $white;
-                }
-            }
-        }
-    }
 
-    .swiper-slide-active {
-        .cate-item {
-            color: $white;
-            background-color: $primary;
-            border-color: $primary;
-            svg path {
-                fill: $white;
-            }
-        }
-    }
-}
+
 .swiper-wrapper-r {
-    margin-right: -20px;
+    margin-right: -16px;
 }
-.categories-item {
-    padding: 7px 12px;
-    border-radius: 1000px;
-    border: 1px solid $line;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $secondary;
-    display: inline-flex;
-    align-items: center;
-    svg {
-        margin-right: 4px;
-    }
-    &.st2 {
-        font-size: 12px;
-        line-height: 16px;
-        padding: 8px 12px;
-    }
-    &.time-st.active,
-    &.active {
-        background-color: $primary;
-        color: $white;
-        border-color: $primary;
-    }
-}
-.cate-item {
-    padding: 7px 16px;
-    background-color: $surface;
-    display: inline-flex;
-    align-items: center;
-    color: $surface;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    border-radius: 100px;
-    gap: 8px;
-}
-.favourite-swiper {
-    .swiper-slide {
-        width: auto;
-    }
-    .wd-dir-store {
-        img {
-            width: 242px;
-            height: 100px;
-        }
-    }
-}
-.banner-store-sw {
-    .left {
-        img {
-            width: 157px;
-            height: 156px;
-            border-radius: 10px;
-        }
-    }
-    .group-img {
-        a {
-            display: block;
-            &:first-child {
-                margin-bottom: 4px;
-            }
-        }
-        img {
-            width: 98px;
-            height: 76px;
-            border-radius: 10px;
-        }
-    }
-    .right {
-        img {
-            width: 157px;
-            height: 156px;
-            border-radius: 10px;
-        }
-    }
-}
+
+
+
 .dots-tes {
     position: unset;
     .swiper-pagination-bullet {

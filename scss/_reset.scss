@@ -475,6 +475,12 @@ select {
 .bg-menuDark {
     background-color: var(--menuDark);
 }
+.bg-icon1{
+    background-color: $rgba-1;
+}
+.bg-icon2{
+    background-color: $rgba-2;
+}
 .text-surface {
     color: var(--surface) !important;
 }

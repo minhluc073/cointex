@@ -148,8 +148,8 @@
       });
     }
 
-    $(".tag-money").click(function () {
-      $(".tag-money.active").removeClass("active");
+    $(".tag-money,.accent-box-v5").click(function () {
+      $(".tag-money.active,.accent-box-v5.active").removeClass("active");
       $(this).addClass("active");
     });
   };
