@@ -39,12 +39,15 @@
         &.sheet-down{
             .modal-dialog {
                 top: 0;
-                transform: translateY(100%);
+                transform: translate(0,-30%);
                 
+            }
+            .modal-content{
+                background-color: var(--surface);
             }
             &.show {
                 .modal-dialog {
-                    transform: translateY(0);
+                    transform: translate(0,0);
 
                 }
             }
