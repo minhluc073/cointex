@@ -801,6 +801,10 @@ select {
   padding-top: 50px;
 }
 
+.pt-55 {
+  padding-top: 55px;
+}
+
 .pt-64 {
   padding-top: 64px;
 }
@@ -1030,6 +1034,16 @@ select {
   padding: 0;
   background-color: var(--menuDark);
 }
+.tab-slide.trade-tab {
+  background-color: var(--menuDark);
+}
+.tab-slide.trade-tab .item-slide-effect {
+  background-color: var(--surface);
+}
+.tab-slide.trade-tab .nav-link.active {
+  background-color: var(--surface);
+  border-color: var(--surface);
+}
 
 .wallet-tabs {
   display: grid;
@@ -1106,6 +1120,7 @@ select {
   gap: 20px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--line);
+  cursor: pointer;
 }
 .menu-tab-v3 .nav-link {
   font-size: 16px;
@@ -1430,6 +1445,28 @@ input[type=text].ip-style2 {
 
 .swiper-wrapper-r {
   margin-right: -16px;
+}
+
+.tf-swiper .menu-tab-v3 {
+  gap: 0;
+  border: 0;
+}
+.tf-swiper .menu-tab-v3 .swiper-slide {
+  width: auto;
+}
+.tf-swiper .menu-tab-v3 .swiper-slide .icon-star {
+  color: var(--remake);
+}
+.tf-swiper.market-swiper {
+  position: relative;
+}
+.tf-swiper.market-swiper::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 97%;
+  height: 1px;
+  background-color: var(--line);
 }
 
 .dots-tes {
@@ -2000,6 +2037,7 @@ input[type=text].ip-style2 {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .accent-box-v5 .icon-box {
   width: 32px;

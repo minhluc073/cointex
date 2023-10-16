@@ -15,6 +15,18 @@
         padding: 0;
         background-color: var(--menuDark);
     }
+    &.trade-tab {
+        background-color: var(--menuDark);
+        .item-slide-effect {
+            background-color: var(--surface);
+        }
+        .nav-link {
+            &.active {
+                background-color: var(--surface);
+                border-color: var(--surface);
+            }
+        }
+    }
 }
 .wallet-tabs {
     display: grid;
@@ -94,6 +106,7 @@
     gap: 20px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--line);
+    cursor: pointer;
     .nav-link {
         font-size: 16px;
         font-weight: 600;

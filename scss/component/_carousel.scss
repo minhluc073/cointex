@@ -1,12 +1,32 @@
 
-
-
-
 .swiper-wrapper-r {
     margin-right: -16px;
 }
 
+.tf-swiper {
 
+    .menu-tab-v3{
+        gap: 0;
+        border: 0;
+        .swiper-slide{
+            width: auto;
+            .icon-star {
+                color: var(--remake);
+            }
+        }
+    }
+    &.market-swiper{
+        position: relative;
+        &::after{
+            position: absolute;
+            bottom: 0;
+            content: "";
+            width: 97%;
+            height: 1px;
+            background-color: var(--line);
+        }
+    }
+}
 
 .dots-tes {
     position: unset;
