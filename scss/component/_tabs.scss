@@ -21,6 +21,10 @@
             background-color: var(--surface);
         }
         .nav-link {
+            &:hover,
+            &:focus {
+                border-color: var(--menuDark);
+            }
             &.active {
                 background-color: var(--surface);
                 border-color: var(--surface);

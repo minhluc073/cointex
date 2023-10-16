@@ -34,7 +34,7 @@
             &.active {
                 a {
                     color: var(--white);
-                    .icon{
+                    .icon {
                         color: var(--primary);
                     }
                 }
@@ -50,4 +50,13 @@
     width: 100%;
     z-index: 1000;
     background-color: var(--menuDark);
+}
+.footer-fixed-v2{
+    position: fixed;
+    bottom: 75px;
+    max-width: 1024px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }

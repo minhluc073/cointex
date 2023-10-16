@@ -451,6 +451,12 @@ select {
     margin-left: auto;
     margin-right: auto;
 }
+.fs-8 {
+    font-size: 8px !important;
+}
+.fs-10 {
+    font-size: 10px !important;
+}
 .fs-12 {
     font-size: 12px !important;
 }
@@ -562,6 +568,7 @@ select {
 .mt-20 {
     margin-top: 20px;
 }
+
 .mt-24 {
     margin-top: 24px;
 }
@@ -677,6 +684,9 @@ select {
 .pb-90 {
     padding-bottom: 90px;
 }
+.pb-120{
+    padding-bottom: 120px;
+}
 .pb-200 {
     padding-bottom: 200px;
 }
@@ -707,9 +717,9 @@ select {
 .pt-70 {
     padding-top: 70px;
 }
-// .line {
-//     border: 1px solid var(--line) !important;
-// }
+.line-border {
+    border: 1px solid var(--line) !important;
+}
 .line-t {
     border-top: 1px solid var(--line);
 }

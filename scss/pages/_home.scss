@@ -17,3 +17,31 @@
         @include flex(center, center);
     }
 }
+
+.trade-box {
+    .coin-item.style-1 {
+        padding: 0;
+        border-radius: 0;
+    }
+    .round-swap {
+        text-align: center;
+        margin: -20px 0px;
+    }
+}
+.trade-list-item {
+    display: flex;
+    justify-content: space-between;
+    .img {
+        width: 12px;
+    }
+    .icon-arr-right {
+        margin-left: 4px;
+    }
+}
+.trade-money-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-top: 1px solid var(--line);
+    background-color: $rgb;
+}
