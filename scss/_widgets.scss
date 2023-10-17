@@ -103,6 +103,18 @@
         height: 48px;
         border-radius: 48px;
     }
+    &.style-2 {
+        gap: 12px;
+        flex-grow: 1;
+        .avt {
+            width: 32px;
+            height: 32px;
+            border-radius: 32px; 
+        }
+        .search-box{
+            flex-grow: 1;
+        }
+    }
 }
 
 .tf-list-item {
@@ -123,7 +135,26 @@
     border-radius: 8px;
     @include flex(center, space-between);
 }
+.tf-list-item-v3 {
+    @include flex(center, space-between);
 
+    .icon {
+        font-size: 40px;
+        color: var(--white);
+    }
+    .icon-key {
+        width: 40px;
+        height: 40px;
+        @include flex(center, center);
+        border-radius: 50px;
+        border: 1px solid var(--white);
+        color: var(--white);
+        font-size: 26px;
+    }
+    .text {
+        padding-right: 70px;
+    }
+}
 .coin-item {
     display: flex;
     align-items: center;

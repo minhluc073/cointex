@@ -753,7 +753,9 @@ select {
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
 }
-
+.gap-2 {
+    gap: 2px !important;
+}
 .gap-4 {
     gap: 4px !important;
 }
@@ -765,6 +767,9 @@ select {
 }
 .gap-10 {
     gap: 10px;
+}
+.gap-14{
+    gap: 14px;
 }
 .gap-16 {
     gap: 16px;
