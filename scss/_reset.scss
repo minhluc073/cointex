@@ -481,10 +481,10 @@ select {
 .bg-menuDark {
     background-color: var(--menuDark);
 }
-.bg-icon1{
+.bg-icon1 {
     background-color: $rgba-1;
 }
-.bg-icon2{
+.bg-icon2 {
     background-color: $rgba-2;
 }
 .text-surface {
@@ -633,6 +633,9 @@ select {
 .p-16 {
     padding: 16px;
 }
+.p-20 {
+    padding: 20px;
+}
 .pb-4 {
     padding-bottom: 4px !important;
 }
@@ -642,7 +645,7 @@ select {
 .pb-8 {
     padding-bottom: 8px;
 }
-.pt-10{
+.pt-10 {
     padding-top: 10px;
 }
 .pt-12 {
@@ -684,7 +687,7 @@ select {
 .pb-90 {
     padding-bottom: 90px;
 }
-.pb-120{
+.pb-120 {
     padding-bottom: 120px;
 }
 .pb-200 {
@@ -768,7 +771,7 @@ select {
 .gap-10 {
     gap: 10px;
 }
-.gap-14{
+.gap-14 {
     gap: 14px;
 }
 .gap-16 {
@@ -812,7 +815,8 @@ select {
 // icon
 .icon-search,
 .icon-noti,
-.icon-question {
+.icon-question,
+.icon-gift {
     color: var(--white);
     font-size: 24px;
 }

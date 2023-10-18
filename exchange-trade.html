@@ -181,16 +181,17 @@
                         <a href="#" class="mt-20 tf-btn lg dark text-secondary">Not enough ETH balance in wallet</a>
 					</div>
 				</div>
-                <div class="mt-16 footer-fixed-v2">
-                    <a href="#" class="trade-money-box">
-                        <p class="">ETH/USDC</p>
-                        <p class="d-flex align-items-center gap-8">
-                            <span>1.876,251425</span>
-                            <span class="text-red">-2,62</span>
-                            <i class="icon-arr-right fs-12"></i>
-                        </p>
-                    </a>
-                </div>
+                
+            </div>
+            <div class="mt-16 footer-fixed-v2" data-bs-toggle="modal" data-bs-target="#detailChart">
+                <a href="#" class="trade-money-box">
+                    <p class="">ETH/USDC</p>
+                    <p class="d-flex align-items-center gap-8">
+                        <span>1.876,251425</span>
+                        <span class="text-red">-2,62</span>
+                        <i class="icon-arr-right fs-12"></i>
+                    </p>
+                </a>
             </div>
         </div>
     </div>
@@ -316,13 +317,57 @@
         </div>
     </div>
 
-
+    <!--chart detail  -->
+    <div class="modal fade action-sheet" id="detailChart">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="d-flex align-items-center gap-8">ETH/USDC <i class="icon-clockwise2 fs-16 text-secondary"></i></h3>
+                    <h2 class="mt-4">1.845,9128</h2>
+                    <p class="mt-4"><a class="text-red">-0,92</a>&emsp;Last 24 hours</p>
+                    <div id="chart">
+                        <div class="toolbar-box flex">
+                          <h3>Your Profile Views</h3>
+                          <div class="toolbar">
+                            <button id="one_month">
+                              1M
+                            </button>
+      
+                            <button id="six_months">
+                              6M
+                            </button>
+      
+                            <button id="one_year" class="active">
+                              1Y
+                            </button>
+      
+                            <button id="ytd">
+                              YTD
+                            </button>
+      
+                            <button id="all">
+                              ALL
+                            </button>
+                          </div>
+                        </div>
+      
+      
+                        <div id="chart-timeline"></div>
+                      </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
     
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/apexcharts.js"></script>
+    <script type="text/javascript" src="js/chart.bundle.min.js"></script>
+    <script type="text/javascript" src="js/detail-chart.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
    

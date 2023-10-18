@@ -233,12 +233,28 @@
   };
   /* setTimeIn
   ------------------------------------------------------------------------------------- */
-  var showNotiAccount = function () {
+  var showNoti = function () {
     if ($("#notiAccount").length > 0) {
       setTimeout(function () {
         $("#notiAccount").modal("show");
       }, 2000);
     }
+    if ($("#modalNoti").length > 0) {
+      let showPopup = sessionStorage.getItem("showPopup");
+      if (!JSON.parse(showPopup)) {
+        setTimeout(function () {
+          $("#modalNoti").modal('show');
+        }, 1000);
+      }
+    }
+  };
+
+   /* hide popup 
+  ------------------------------------------------------------------------------------- */
+  const hidePopupNoti = function () {
+    $(".btn-hide-modal").on("click", function () {
+      sessionStorage.setItem("showPopup", true);
+    });
   };
 
   /* preloader 
@@ -262,9 +278,10 @@
     activeSuggest();
     changeValue();
     loadmore();
-    showNotiAccount();
+    showNoti();
     tabSlide();
     clickModalSecond();
+    hidePopupNoti();
     preloader();
   });
 })(jQuery);

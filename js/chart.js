@@ -1,7 +1,7 @@
 (function ($) {
   /* "use strict" */
 
-  var dzChartlist = (function () {
+  var tfLineChart = (function () {
     let draw = Chart.controllers.line.__super__.draw; //draw shadow
     var screenWidth = $(window).width();
 
@@ -15,7 +15,7 @@
           colors: ["#D250FF"],
           chart: {
             type: "line",
-            width: 96,
+            maxWidth: 96,
             height: 26,
             sparkline: { enabled: !0 },
           },
@@ -54,40 +54,39 @@
           },
         },
         chart1 = new ApexCharts(
-          document.querySelector("#total-revenue-chart-1"),
+          document.querySelector("#line-chart-1"),
           options1
         );
       chart1.render();
     };
-
     var chartBar2 = function () {
       var options2 = {
           series: [
             {
-              data: [
-                55, 56, 51, 49, 63, 35, 44, 40, 36, 40, 54, 49, 63, 35, 44, 3,
-              ],
+              data: [20, 50, 7, 100, -8, 80, 100],
             },
           ],
-          colors: ["#D33535"],
+          colors: ["#25C866"],
           chart: {
-            type: "area",
-            width: 100,
-            height: 40,
+            type: "line",
+            maxWidth: 96,
+            height: 26,
             sparkline: { enabled: !0 },
           },
           plotOptions: { bar: { columnWidth: "50%" } },
-          labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           xaxis: { crosshairs: { width: 1 } },
+
           stroke: {
             show: true,
             curve: "smooth",
             lineCap: "butt",
             colors: undefined,
-            width: 2,
+            width: 1,
             dashArray: 0,
           },
+
           tooltip: {
+            enabled: false,
             fixed: { enabled: !1 },
             x: { show: !1 },
             y: {
@@ -99,41 +98,48 @@
             },
             marker: { show: !1 },
           },
+          states: {
+            hover: {
+              filter: {
+                type: "none",
+                value: 0,
+              },
+            },
+          },
         },
         chart2 = new ApexCharts(
-          document.querySelector("#total-revenue-chart-2"),
+          document.querySelector("#line-chart-2"),
           options2
         );
       chart2.render();
     };
     var chartBar3 = function () {
-      var options2 = {
+      var options3 = {
           series: [
             {
-              data: [
-                55, 56, 51, 49, 63, 35, 44, 40, 36, 40, 54, 49, 63, 35, 44, 3,
-              ],
+              data: [5, 30, -20, 80, -50, 100, -80, 3, -20, 90],
             },
           ],
-          colors: ["#D33535"],
+          colors: ["#0082FE"],
           chart: {
-            type: "area",
-            width: 100,
-            height: 40,
+            type: "line",
+            maxWidth: 96,
+            height: 26,
             sparkline: { enabled: !0 },
           },
           plotOptions: { bar: { columnWidth: "50%" } },
-          labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          // labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           xaxis: { crosshairs: { width: 1 } },
           stroke: {
             show: true,
             curve: "smooth",
             lineCap: "butt",
             colors: undefined,
-            width: 2,
+            width: 1,
             dashArray: 0,
           },
           tooltip: {
+            enabled: false,
             fixed: { enabled: !1 },
             x: { show: !1 },
             y: {
@@ -146,13 +152,120 @@
             marker: { show: !1 },
           },
         },
-        chart2 = new ApexCharts(
-          document.querySelector("#total-revenue-chart-3"),
-          options2
+        chart3 = new ApexCharts(
+          document.querySelector("#line-chart-3"),
+          options3
         );
-      chart2.render();
+      chart3.render();
     };
+    var chartBar4 = function () {
+      var options4 = {
+          series: [
+            {
+              data: [20, 50, 7, 100, -8, 80, 100],
+            },
+          ],
+          colors: ["#D250FF"],
+          chart: {
+            type: "line",
+            maxWidth: 96,
+            height: 26,
+            sparkline: { enabled: !0 },
+          },
+          plotOptions: { bar: { columnWidth: "50%" } },
+          xaxis: { crosshairs: { width: 1 } },
 
+          stroke: {
+            show: true,
+            curve: "smooth",
+            lineCap: "butt",
+            colors: undefined,
+            width: 1,
+            dashArray: 0,
+          },
+
+          tooltip: {
+            enabled: false,
+            fixed: { enabled: !1 },
+            x: { show: !1 },
+            y: {
+              title: {
+                formatter: function (e) {
+                  return "";
+                },
+              },
+            },
+            marker: { show: !1 },
+          },
+          states: {
+            hover: {
+              filter: {
+                type: "none",
+                value: 0,
+              },
+            },
+          },
+        },
+        chart4 = new ApexCharts(
+          document.querySelector("#line-chart-4"),
+          options4
+        );
+      chart4.render();
+    };
+    var chartBar5 = function () {
+      var options5 = {
+          series: [
+            {
+              data: [20, 50, 7, 100, -8, 80, 100],
+            },
+          ],
+          colors: ["#25C866"],
+          chart: {
+            type: "line",
+            maxWidth: 96,
+            height: 26,
+            sparkline: { enabled: !0 },
+          },
+          plotOptions: { bar: { columnWidth: "50%" } },
+          xaxis: { crosshairs: { width: 1 } },
+
+          stroke: {
+            show: true,
+            curve: "smooth",
+            lineCap: "butt",
+            colors: undefined,
+            width: 1,
+            dashArray: 0,
+          },
+
+          tooltip: {
+            enabled: false,
+            fixed: { enabled: !1 },
+            x: { show: !1 },
+            y: {
+              title: {
+                formatter: function (e) {
+                  return "";
+                },
+              },
+            },
+            marker: { show: !1 },
+          },
+          states: {
+            hover: {
+              filter: {
+                type: "none",
+                value: 0,
+              },
+            },
+          },
+        },
+        chart5 = new ApexCharts(
+          document.querySelector("#line-chart-5"),
+          options5
+        );
+      chart5.render();
+    };
     /* Function ============ */
     return {
       init: function () {},
@@ -161,8 +274,9 @@
         chartBar1();
         chartBar2();
         chartBar3();
+        chartBar4();
+        chartBar5();
       },
-
       resize: function () {},
     };
   })();
@@ -170,7 +284,7 @@
   jQuery(document).ready(function () {});
 
   jQuery(window).on("load", function () {
-    dzChartlist.load();
+    tfLineChart.load();
   });
 
   jQuery(window).on("resize", function () {});

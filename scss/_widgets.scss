@@ -1,7 +1,7 @@
 .tf-checkbox {
     position: relative;
     border: 1px solid var(--primary);
-    background-color: var(--primary);
+    background-color: var(--surface);
     border-radius: 2px;
     cursor: pointer;
     outline: 0;
@@ -18,14 +18,16 @@
         color: var(--surface);
     }
     &:checked {
-        background-color: var(--surface);
+        background-color: var(--primary);
     }
     &.style-2 {
         width: 12px;
         height: 12px;
         border-radius: 50px;
+        border: 1px solid var(--secondary);
         &:checked {
-            border: 1px solid var(--secondary);
+            border: 1px solid var(--primary);
+
         }
         &::before {
             font-size: 6px;

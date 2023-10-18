@@ -717,6 +717,10 @@ select {
   padding: 16px;
 }
 
+.p-20 {
+  padding: 20px;
+}
+
 .pb-4 {
   padding-bottom: 4px !important;
 }
@@ -950,7 +954,8 @@ select {
 
 .icon-search,
 .icon-noti,
-.icon-question {
+.icon-question,
+.icon-gift {
   color: var(--white);
   font-size: 24px;
 }
@@ -1485,20 +1490,20 @@ input[type=text].ip-style2 {
   margin-right: -16px;
 }
 
-.tf-swiper .menu-tab-v3 {
+.market-swiper {
+  position: relative;
+}
+.market-swiper .menu-tab-v3 {
   gap: 0;
   border: 0;
 }
-.tf-swiper .menu-tab-v3 .swiper-slide {
+.market-swiper .menu-tab-v3 .swiper-slide {
   width: auto;
 }
-.tf-swiper .menu-tab-v3 .swiper-slide .icon-star {
+.market-swiper .menu-tab-v3 .swiper-slide .icon-star {
   color: var(--remake);
 }
-.tf-swiper.market-swiper {
-  position: relative;
-}
-.tf-swiper.market-swiper::after {
+.market-swiper::after {
   position: absolute;
   bottom: 0;
   content: "";
@@ -1530,7 +1535,11 @@ input[type=text].ip-style2 {
   background-color: var(--menuDark);
 }
 .modal .modal-sm {
-  max-width: 375px;
+  max-width: 314px;
+  margin: 0 auto;
+}
+.modal .success_box {
+  max-width: 343px;
   margin: 0 auto;
 }
 .modal.action-sheet {
@@ -1596,19 +1605,19 @@ input[type=text].ip-style2 {
 .modal.modalRight .modal-filter {
   overflow: auto;
 }
-.modal.modalCenter .modal-dialog-centered {
-  margin: 0 30px;
-  max-width: 100%;
-}
 .modal.modalCenter .modal-content {
   border-radius: 14px;
   backdrop-filter: blur(11px);
 }
+.modal#modalNoti2 .modal-content, .modal#modalNoti .modal-content {
+  border-radius: 8px;
+}
+.modal#modalNoti2 .modal-content {
+  max-width: 335px;
+  margin: 0 auto;
+}
 .modal.fade {
   transition: opacity 0.3s linear;
-}
-.modal#successful .modal-dialog-centered {
-  margin: 0 23px;
 }
 
 .modal-backdrop {
@@ -1799,8 +1808,6 @@ input[type=text].ip-style2 {
 .coin-box {
   background-color: rgba(255, 255, 255, 0.12);
   display: flex;
-  width: 120px;
-  height: 120px;
   padding: 16px 12px 17px 12px;
   border-radius: 12px;
   position: relative;
@@ -1842,6 +1849,24 @@ input[type=text].ip-style2 {
   border: 0 !important;
   background: none !important;
   box-shadow: none !important;
+}
+
+.cb-noti {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cb-noti label {
+  font-size: 12px;
+  line-height: 16px;
+}
+.cb-noti .tf-checkbox {
+  flex-shrink: 0;
+  border-radius: 5px;
+  border-color: var(--white);
+}
+.cb-noti .tf-checkbox:checked {
+  border-color: var(--primary);
 }
 
 .blog-item img {
@@ -1896,7 +1921,7 @@ input[type=text].ip-style2 {
 .tf-checkbox {
   position: relative;
   border: 1px solid var(--primary);
-  background-color: var(--primary);
+  background-color: var(--surface);
   border-radius: 2px;
   cursor: pointer;
   outline: 0;
@@ -1916,15 +1941,16 @@ input[type=text].ip-style2 {
   color: var(--surface);
 }
 .tf-checkbox:checked {
-  background-color: var(--surface);
+  background-color: var(--primary);
 }
 .tf-checkbox.style-2 {
   width: 12px;
   height: 12px;
   border-radius: 50px;
+  border: 1px solid var(--secondary);
 }
 .tf-checkbox.style-2:checked {
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--primary);
 }
 .tf-checkbox.style-2::before {
   font-size: 6px;

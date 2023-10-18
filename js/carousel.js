@@ -38,3 +38,27 @@ if ($(".tf-swiper").length > 0) {
     },
   });
 }
+
+if ($(".market-swiper").length > 0) {
+  var spacing = $(" .market-swiper").data("space-between");
+  var preview = $(".market-swiper").data("preview");
+  var tablet = $(".market-swiper").data("tablet");
+  var desktop = $(".market-swiper").data("desktop");
+  var swiper4 = new Swiper(".market-swiper", {
+    speed: 1500,
+    slidesPerView: preview,
+    loop: false,
+    spaceBetween: spacing,
+    observer: true,
+    observeParents: true,
+
+    breakpoints: {
+      1024: {
+        slidesPerView: desktop,
+      },
+      768: {
+        slidesPerView: tablet,
+      },
+    },
+  });
+}

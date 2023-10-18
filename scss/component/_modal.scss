@@ -6,7 +6,11 @@
         background-color: var(--menuDark);
     }
     .modal-sm {
-        max-width: 375px;
+        max-width: 314px;
+        margin: 0 auto;
+    }
+    .success_box {
+        max-width: 343px;
         margin: 0 auto;
     }
     &.action-sheet {
@@ -36,24 +40,21 @@
             padding: 20px 16px;
         }
 
-        &.sheet-down{
+        &.sheet-down {
             .modal-dialog {
                 top: 0;
-                transform: translate(0,-30%);
-                
+                transform: translate(0, -30%);
             }
-            .modal-content{
+            .modal-content {
                 background-color: var(--surface);
             }
             &.show {
                 .modal-dialog {
-                    transform: translate(0,0);
-
+                    transform: translate(0, 0);
                 }
             }
         }
     }
-
     &.modalRight {
         .modal-dialog {
             transform: translate(100%, 0) !important;
@@ -88,23 +89,29 @@
         }
     }
     &.modalCenter {
-        .modal-dialog-centered {
-            margin: 0 30px;
-            max-width: 100%;
-        }
+        // .modal-dialog-centered {
+        //     margin: 0 auto;
+        //     max-width: 100%;
+        // }
         .modal-content {
             border-radius: 14px;
             backdrop-filter: blur(11px);
         }
     }
-
+    &#modalNoti2,
+    &#modalNoti {
+        .modal-content {
+            border-radius: 8px;
+        }
+    }
+    &#modalNoti2 {
+        .modal-content {
+            max-width: 335px;
+            margin: 0 auto;
+        }
+    }
     &.fade {
         transition: opacity 0.3s linear;
-    }
-    &#successful {
-        .modal-dialog-centered {
-            margin: 0 23px;
-        }
     }
 }
 .modal-backdrop {
@@ -113,7 +120,6 @@
         opacity: 0.8;
     }
 }
-
 .app-wallet {
     #filterHistory {
         z-index: 1062 !important;
