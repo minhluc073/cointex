@@ -1301,6 +1301,18 @@ input[type=text].ip-style2 {
   color: var(--white);
   z-index: 8;
 }
+.select-wrapper.style-2 {
+  border-radius: 0;
+  background-color: var(--surface);
+}
+.select-wrapper.style-2 .tf-select {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--white);
+  border: 0;
+  padding: 0px;
+  padding-right: 16px;
+}
 
 .show-pass,
 .show-pass2 {
@@ -1502,14 +1514,6 @@ input[type=text].ip-style2 {
 }
 .market-swiper .menu-tab-v3 .swiper-slide .icon-star {
   color: var(--remake);
-}
-.market-swiper::after {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 97%;
-  height: 1px;
-  background-color: var(--line);
 }
 
 .dots-tes {
@@ -1867,6 +1871,25 @@ input[type=text].ip-style2 {
 }
 .cb-noti .tf-checkbox:checked {
   border-color: var(--primary);
+}
+
+.wrap-filter-swiper {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.wrap-filter-swiper .cryptex-rating {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  display: inline-flex;
+  color: var(--primary);
+  gap: 2px;
+}
+.wrap-filter-swiper .cryptex-rating i {
+  color: #f5c738;
+  font-size: 12px;
+  margin-top: 4px;
 }
 
 .blog-item img {

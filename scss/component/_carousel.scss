@@ -14,14 +14,6 @@
             }
         }
     }
-    &::after {
-        position: absolute;
-        bottom: 0;
-        content: "";
-        width: 97%;
-        height: 1px;
-        background-color: var(--line);
-    }
 }
 
 .dots-tes {
