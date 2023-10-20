@@ -5,6 +5,7 @@
     border-radius: 8px;
     width: 100%;
     @include flex(center, center);
+    text-align: center;
     gap: 8px;
 
     &.primary {

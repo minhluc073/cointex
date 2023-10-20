@@ -1174,6 +1174,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 8px;
 }
 .tf-btn.primary {
@@ -1304,6 +1305,7 @@ input[type=text].ip-style2 {
 .select-wrapper.style-2 {
   border-radius: 0;
   background-color: var(--surface);
+  margin-left: -10px;
 }
 .select-wrapper.style-2 .tf-select {
   font-size: 12px;
@@ -1312,6 +1314,11 @@ input[type=text].ip-style2 {
   border: 0;
   padding: 0px;
   padding-right: 16px;
+  padding-left: 10px;
+}
+.select-wrapper.style-2::after {
+  top: 0px;
+  right: 0px;
 }
 
 .show-pass,

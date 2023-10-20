@@ -45,16 +45,24 @@ input[type="text"].ip-style2 {
         color: var(--white);
         z-index: 8;
     }
-    &.style-2{
+    &.style-2 {
         border-radius: 0;
         background-color: var(--surface);
-        .tf-select{
+        margin-left: -10px;
+        .tf-select {
             font-size: 12px;
             line-height: 16px;
             color: var(--white);
             border: 0;
             padding: 0px;
             padding-right: 16px;
+            padding-left: 10px;
+           
+        }
+        &::after {
+            top: 0px;
+            right: 0px;
+            
         }
     }
 }

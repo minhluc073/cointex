@@ -39,6 +39,8 @@ if ($(".tf-swiper").length > 0) {
   });
 }
 
+
+
 if ($(".market-swiper").length > 0) {
   var spacing = $(" .market-swiper").data("space-between");
   var preview = $(".market-swiper").data("preview");
