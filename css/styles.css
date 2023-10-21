@@ -552,6 +552,10 @@ select {
   color: var(--red);
 }
 
+.text-warning {
+  color: var(--remake) !important;
+}
+
 .text-large {
   font-size: 16px;
   line-height: 26px;
@@ -988,6 +992,14 @@ select {
 .icon-mobile {
   font-size: 20px;
   color: var(--white);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-st2 {
+  flex: 1.2;
 }
 
 .header {
@@ -1899,6 +1911,11 @@ input[type=text].ip-style2 {
   margin-top: 4px;
 }
 
+.hh {
+  width: 100%;
+  flex: 1;
+}
+
 .blog-item img {
   border-radius: 10px 10px 0px 0px;
 }
@@ -1946,6 +1963,11 @@ input[type=text].ip-style2 {
 .list-item-social .icon {
   font-size: 16px;
   color: var(--white);
+}
+
+.banner-qr {
+  max-width: 362px;
+  margin: 0 auto;
 }
 
 .tf-checkbox {

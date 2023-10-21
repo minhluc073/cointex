@@ -502,6 +502,9 @@ select {
 .text-red {
     color: var(--red);
 }
+.text-warning {
+    color: var(--remake) !important;
+}
 .text-large {
     font-size: 16px;
     line-height: 26px;
@@ -636,6 +639,7 @@ select {
 .p-20 {
     padding: 20px;
 }
+
 .pb-4 {
     padding-bottom: 4px !important;
 }
@@ -843,4 +847,10 @@ select {
 .icon-mobile {
     font-size: 20px;
     color: var(--white);
+}
+.flex-1 {
+    flex: 1;
+}
+.flex-st2{
+    flex: 1.2;
 }
