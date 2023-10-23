@@ -27,7 +27,6 @@
         border: 1px solid var(--secondary);
         &:checked {
             border: 1px solid var(--primary);
-
         }
         &::before {
             font-size: 6px;
@@ -111,9 +110,9 @@
         .avt {
             width: 32px;
             height: 32px;
-            border-radius: 32px; 
+            border-radius: 32px;
         }
-        .search-box{
+        .search-box {
             flex-grow: 1;
         }
     }
@@ -299,7 +298,7 @@
         border: 1px solid var(--primary);
     }
 }
-.accent-box-v6{
+.accent-box-v6 {
     padding: 16px 12px;
     border-radius: 8px;
 }
@@ -383,7 +382,7 @@
             color: $white;
         }
     }
-    &.xl{
+    &.xl {
         width: 138px;
         height: 138px;
     }
@@ -651,5 +650,82 @@
         -o-transform: translateY(-7px);
         -ms-transform: translateY(-7px);
         transform: translateY(-7px);
+    }
+}
+
+// preloader
+.preload {
+    overflow: hidden;
+}
+
+.preload-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: $primary;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999999999;
+    display: block;
+    overflow: hidden;
+}
+
+.preload-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    margin: -45px 0 0 -45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: preload 1s linear infinite alternate;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
     }
 }

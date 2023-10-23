@@ -73,6 +73,14 @@
         background-color: var(--red);
     }
 }
+.tag-sm{
+    padding: 2px 12px;
+    display: inline-block;
+    border-radius: 100px;
+    &.dark{
+        background-color: var(--menuDark);
+    }
+}
 
 .coin-btn {
     padding: 4px 8px;
