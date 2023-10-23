@@ -299,6 +299,10 @@
         border: 1px solid var(--primary);
     }
 }
+.accent-box-v6{
+    padding: 16px 12px;
+    border-radius: 8px;
+}
 
 .icon-round-check {
     position: relative;
@@ -378,6 +382,10 @@
             font-size: 22px;
             color: $white;
         }
+    }
+    &.xl{
+        width: 138px;
+        height: 138px;
     }
     &.lg {
         width: 82px;

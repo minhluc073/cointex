@@ -1,11 +1,11 @@
 (function ($) {
   /* "use strict" */
 
-  var tfLineChart = (function () {
+  var tfAreaChart = (function () {
     let draw = Chart.controllers.line.__super__.draw; //draw shadow
     var screenWidth = $(window).width();
 
-    var chartBar1 = function () {
+    var areaChart1 = function () {
       var options1 = {
           series: [
             {
@@ -59,23 +59,27 @@
           },
         },
         chart1 = new ApexCharts(
-          document.querySelector("#area-chart-1h"),
+          document.querySelector(".area-chart-1"),
           options1
         );
       chart1.render();
     };
-    var chartBar2 = function () {
+    var areaChart2 = function () {
       var options2 = {
           series: [
             {
-              data: [20, 50, 7, 100, -8, 80, 100],
+              data: [
+                1.128307699, 1.428307699, 1.228307699, 1.328307699, 1.2124344,
+                1.4283077, 1.32830745, 1.528307699, 1.428312, 1.4383234,
+                1.32830745, 1.628307699, 1.128307699,
+              ],
             },
           ],
           colors: ["#25C866"],
           chart: {
-            type: "line",
-            maxWidth: 96,
-            height: 26,
+            type: "area",
+            Width: 390,
+            height: 205,
             sparkline: { enabled: !0 },
           },
           plotOptions: { bar: { columnWidth: "50%" } },
@@ -91,7 +95,7 @@
           },
 
           tooltip: {
-            enabled: false,
+            // enabled: false,
             fixed: { enabled: !1 },
             x: { show: !1 },
             y: {
@@ -103,6 +107,7 @@
             },
             marker: { show: !1 },
           },
+
           states: {
             hover: {
               filter: {
@@ -113,28 +118,32 @@
           },
         },
         chart2 = new ApexCharts(
-          document.querySelector("#line-chart-2"),
+          document.querySelector(".area-chart-2"),
           options2
         );
       chart2.render();
     };
-    var chartBar3 = function () {
+    var areaChart3 = function () {
       var options3 = {
           series: [
             {
-              data: [5, 30, -20, 80, -50, 100, -80, 3, -20, 90],
+              data: [
+                1.128307699, 1.428307699, 1.228307699, 1.328307699, 1.2124344,
+                1.4283077, 1.32830745, 1.528307699, 1.428312, 1.4383234,
+                1.32830745, 1.628307699, 1.128307699,
+              ],
             },
           ],
-          colors: ["#0082FE"],
+          colors: ["#25C866"],
           chart: {
-            type: "line",
-            maxWidth: 96,
-            height: 26,
+            type: "area",
+            Width: 390,
+            height: 205,
             sparkline: { enabled: !0 },
           },
           plotOptions: { bar: { columnWidth: "50%" } },
-          // labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           xaxis: { crosshairs: { width: 1 } },
+
           stroke: {
             show: true,
             curve: "smooth",
@@ -143,8 +152,9 @@
             width: 1,
             dashArray: 0,
           },
+
           tooltip: {
-            enabled: false,
+            // enabled: false,
             fixed: { enabled: !1 },
             x: { show: !1 },
             y: {
@@ -156,25 +166,38 @@
             },
             marker: { show: !1 },
           },
+
+          states: {
+            hover: {
+              filter: {
+                type: "none",
+                value: 0,
+              },
+            },
+          },
         },
         chart3 = new ApexCharts(
-          document.querySelector("#line-chart-3"),
+          document.querySelector(".area-chart-3"),
           options3
         );
       chart3.render();
     };
-    var chartBar4 = function () {
+    var areaChart4 = function () {
       var options4 = {
           series: [
             {
-              data: [20, 50, 7, 100, -8, 80, 100],
+              data: [
+                1.128307699, 1.428307699, 1.228307699, 1.328307699, 1.2124344,
+                1.4283077, 1.32830745, 1.528307699, 1.428312, 1.4383234,
+                1.32830745, 1.628307699, 1.128307699,
+              ],
             },
           ],
-          colors: ["#D250FF"],
+          colors: ["#25C866"],
           chart: {
-            type: "line",
-            maxWidth: 96,
-            height: 26,
+            type: "area",
+            Width: 390,
+            height: 205,
             sparkline: { enabled: !0 },
           },
           plotOptions: { bar: { columnWidth: "50%" } },
@@ -190,7 +213,7 @@
           },
 
           tooltip: {
-            enabled: false,
+            // enabled: false,
             fixed: { enabled: !1 },
             x: { show: !1 },
             y: {
@@ -202,6 +225,7 @@
             },
             marker: { show: !1 },
           },
+
           states: {
             hover: {
               filter: {
@@ -212,23 +236,27 @@
           },
         },
         chart4 = new ApexCharts(
-          document.querySelector("#line-chart-4"),
+          document.querySelector(".area-chart-4"),
           options4
         );
       chart4.render();
     };
-    var chartBar5 = function () {
+    var areaChart5 = function () {
       var options5 = {
           series: [
             {
-              data: [20, 50, 7, 100, -8, 80, 100],
+              data: [
+                1.128307699, 1.428307699, 1.228307699, 1.328307699, 1.2124344,
+                1.4283077, 1.32830745, 1.528307699, 1.428312, 1.4383234,
+                1.32830745, 1.628307699, 1.128307699,
+              ],
             },
           ],
           colors: ["#25C866"],
           chart: {
-            type: "line",
-            maxWidth: 96,
-            height: 26,
+            type: "area",
+            Width: 390,
+            height: 205,
             sparkline: { enabled: !0 },
           },
           plotOptions: { bar: { columnWidth: "50%" } },
@@ -244,7 +272,7 @@
           },
 
           tooltip: {
-            enabled: false,
+            // enabled: false,
             fixed: { enabled: !1 },
             x: { show: !1 },
             y: {
@@ -256,6 +284,7 @@
             },
             marker: { show: !1 },
           },
+
           states: {
             hover: {
               filter: {
@@ -266,21 +295,82 @@
           },
         },
         chart5 = new ApexCharts(
-          document.querySelector("#line-chart-5"),
+          document.querySelector(".area-chart-5"),
           options5
         );
       chart5.render();
+    };
+    var areaChart6 = function () {
+      var options6 = {
+          series: [
+            {
+              data: [
+                1.128307699, 1.428307699, 1.228307699, 1.328307699, 1.2124344,
+                1.4283077, 1.32830745, 1.528307699, 1.428312, 1.4383234,
+                1.32830745, 1.628307699, 1.128307699,
+              ],
+            },
+          ],
+          colors: ["#25C866"],
+          chart: {
+            type: "area",
+            Width: 390,
+            height: 205,
+            sparkline: { enabled: !0 },
+          },
+          plotOptions: { bar: { columnWidth: "50%" } },
+          xaxis: { crosshairs: { width: 1 } },
+
+          stroke: {
+            show: true,
+            curve: "smooth",
+            lineCap: "butt",
+            colors: undefined,
+            width: 1,
+            dashArray: 0,
+          },
+
+          tooltip: {
+            // enabled: false,
+            fixed: { enabled: !1 },
+            x: { show: !1 },
+            y: {
+              title: {
+                formatter: function (e) {
+                  return "";
+                },
+              },
+            },
+            marker: { show: !1 },
+          },
+
+          states: {
+            hover: {
+              filter: {
+                type: "none",
+                value: 0,
+              },
+            },
+          },
+        },
+        chart6 = new ApexCharts(
+          document.querySelector(".area-chart-6"),
+          options6
+        );
+      chart6.render();
     };
     /* Function ============ */
     return {
       init: function () {},
 
       load: function () {
-        chartBar1();
-        chartBar2();
-        chartBar3();
-        chartBar4();
-        chartBar5();
+        areaChart1();
+        areaChart2();
+        areaChart3();
+        areaChart4();
+        areaChart5();
+        areaChart6();
+
       },
       resize: function () {},
     };
@@ -289,7 +379,7 @@
   jQuery(document).ready(function () {});
 
   jQuery(window).on("load", function () {
-    tfLineChart.load();
+    tfAreaChart.load();
   });
 
   jQuery(window).on("resize", function () {});

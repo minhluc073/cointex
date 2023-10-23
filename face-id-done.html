@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <title>face id</title>
+    <title>face id done</title>
 </head>
 
 <body>
@@ -29,27 +29,25 @@
     <div class="bg-face">
         <div class="tf-container">
             <h5 class="mt-12 text-center text-secondary">Please look into the camera and hold still</h5>
-            <div class="mt-8 pt-45 banner-scan-profile m--16 pb-16" style="background-image: url('images/banner/banner-faceId.png')">
+            <div class="mt-8 pt-45 banner-scan-profile style-2 m--16 pb-16" style="background-image: url('images/banner/banner-faceId2.png')">
                 <div class="line-qr">
                     <img src="images/banner/line-qr.png" alt="img">
                 </div>
-                <div class="box-noti-camera">
-                    <span class="icon-think icon"></span>
-                    <p class="text-large text-surface">Adjust your camera orientation to show your face clearly to finish.</p>
+                <div class="overlay"></div>
+                <div class="scan-done">
+                    <a href="verification-done.html" class="circle-box xl bg-circle check-icon bg-primary"></a>
                 </div>
             </div>
         </div>
-        
     </div>
 
-    
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             window.setTimeout(function(){
-                location.href = "face-id-done.html";
+                location.href = "verification-done.html";
             },3000) 
         });
     </script>

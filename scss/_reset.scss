@@ -521,6 +521,10 @@ select {
     font-size: 11px;
     line-height: 13px;
 }
+.text-extra-small {
+    font-size: 10px;
+    line-height: 12px;
+}
 .fw-3 {
     font-weight: 300;
 }
@@ -707,7 +711,7 @@ select {
     padding-top: 40px;
 }
 .pt-45 {
-    padding-top: 44px;
+    padding-top: 45px;
 }
 .pt-50 {
     padding-top: 50px;
@@ -851,6 +855,6 @@ select {
 .flex-1 {
     flex: 1;
 }
-.flex-st2{
+.flex-st2 {
     flex: 1.2;
 }
