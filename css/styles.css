@@ -1654,10 +1654,10 @@ input[type=text].ip-style2 {
   border-radius: 14px;
   backdrop-filter: blur(11px);
 }
-.modal#modalNoti2 .modal-content, .modal#modalNoti .modal-content {
+.modal#notiPrivacy .modal-content, .modal#modalNoti .modal-content {
   border-radius: 8px;
 }
-.modal#modalNoti2 .modal-content {
+.modal#notiPrivacy .modal-content {
   max-width: 335px;
   margin: 0 auto;
 }
@@ -1905,15 +1905,28 @@ input[type=text].ip-style2 {
 .coin-box .coin-logo .title span {
   opacity: 0.6;
 }
-.coin-box .svg-blur {
-  filter: blur(28.0701751709px);
-  -webkit-filter: blur(28.0701751709px);
-  -moz-filter: blur(28.0701751709px);
-  -ms-filter: blur(28.0701751709px);
+.coin-box .blur {
+  filter: blur(28px);
+  -webkit-filter: blur(28px);
+  -moz-filter: blur(28px);
+  -ms-filter: blur(28px);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 27px;
+  left: 20px;
+  right: 16px;
+  bottom: 20px;
+}
+.coin-box .blur.bg1 {
+  background-color: #ab00e7;
+  opacity: 0.4;
+}
+.coin-box .blur.bg2 {
+  background-color: #25C866;
+  opacity: 0.4;
+}
+.coin-box .blur.bg3 {
+  background-color: #0082FE;
+  opacity: 0.4;
 }
 .coin-box .apexcharts-canvas {
   z-index: 1;

@@ -98,15 +98,30 @@
         }
     }
 
-    .svg-blur {
-        filter: blur(28.0701751709px);
-        -webkit-filter: blur(28.0701751709px);
-        -moz-filter: blur(28.0701751709px);
-        -ms-filter: blur(28.0701751709px);
+    .blur {
+        filter: blur(28px);
+        // -webkit-filter: blur(28px);
+
+        -webkit-filter: blur(28px);
+        -moz-filter: blur(28px);
+        -ms-filter: blur(28px);
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 27px;
+        left: 20px;
+        right: 16px;
+        bottom: 20px;
+        &.bg1 {
+            background-color: #ab00e7;
+            opacity: 0.4;
+        }
+        &.bg2 {
+            background-color: #25C866;
+            opacity: 0.4;
+        }
+        &.bg3 {
+            background-color: #0082FE;
+            opacity: 0.4;
+        }
     }
 
     .apexcharts-canvas {
