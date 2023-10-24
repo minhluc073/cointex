@@ -239,7 +239,11 @@ body {
     background-color: var(--surface);
     color: var(--secondary);
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     width: 100%;
+}
+html {
+    height: -webkit-fill-available;
 }
 
 a {
@@ -610,10 +614,10 @@ select {
 .mb-20 {
     margin-bottom: 20px;
 }
-.mb-32{
+.mb-32 {
     margin-bottom: 32px;
 }
-.mb-35{
+.mb-35 {
     margin-bottom: 35px;
 }
 .mb-60 {
