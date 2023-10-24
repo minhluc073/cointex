@@ -99,7 +99,10 @@
     }
 
     .svg-blur {
-        filter: $blur;
+        filter: blur(28.0701751709px);
+        -webkit-filter: blur(28.0701751709px);
+        -moz-filter: blur(28.0701751709px);
+        -ms-filter: blur(28.0701751709px);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -192,5 +195,3 @@
         padding: 20px 16px;
     }
 }
-
-
