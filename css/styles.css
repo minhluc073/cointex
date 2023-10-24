@@ -1962,8 +1962,8 @@ input[type=text].ip-style2 {
 
 .wrap-filter-swiper {
   display: flex;
+  flex-direction: column;
   gap: 8px;
-  border-bottom: 1px solid var(--line);
 }
 .wrap-filter-swiper .cryptex-rating {
   font-size: 16px;
@@ -1977,6 +1977,13 @@ input[type=text].ip-style2 {
   color: #f5c738;
   font-size: 12px;
   margin-top: 4px;
+}
+.wrap-filter-swiper .menu-tab-v3 {
+  overflow-x: auto;
+  margin-right: -16px;
+}
+.wrap-filter-swiper .menu-tab-v3 .nav-link {
+  white-space: nowrap;
 }
 
 .box-detail-chart .top {
