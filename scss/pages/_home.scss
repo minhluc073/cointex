@@ -158,21 +158,19 @@
 }
 
 .wrap-filter-swiper {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 8px;
     // border-bottom: 1px solid var(--line);
     .cryptex-rating {
-        font-size: 16px;
-        line-height: 21px;
-        font-weight: 600;
+        
         display: inline-flex;
         color: var(--primary);
         gap: 2px;
         i {
             color: $remake;
-            font-size: 12px;
-            margin-top: 4px;
+            font-size: 18px;
+            margin-top: 1px;
         }
     }
     .menu-tab-v3 {
