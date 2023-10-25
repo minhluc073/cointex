@@ -148,8 +148,13 @@
       });
     }
 
-    $(".tag-money,.accent-box-v5").click(function () {
-      $(".tag-money.active,.accent-box-v5.active").removeClass("active");
+    $(".tag-money,.accent-box-v5,.item-time").click(function () {
+      $(".tag-money.active,.accent-box-v5.active,.item-time.active").removeClass("active");
+      $(this).addClass("active");
+    });
+    
+    $(".item-category").click(function(){
+      $(".item-category.active").removeClass("active");
       $(this).addClass("active");
     });
   };

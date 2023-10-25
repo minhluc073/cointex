@@ -94,7 +94,7 @@
                                 </div>
                             </div>
                         </div>
-						<a href="javascript:void(0);" class="tf-btn lg mt-20 primary">Approve</a>
+						<a href="#success" class="tf-btn lg mt-20 primary" data-bs-toggle="modal">Approve</a>
                         <ul class="mt-20 accent-box line-border">
                             <li class="trade-list-item">
                                  <p class="d-flex align-items-center text-small gap-4">Reference <i class="icon-question fs-16 text-secondary"></i> </p>
@@ -224,98 +224,6 @@
         </ul>
     </div>
 
-    <!-- connect wallet -->
-    <div class="modal fade action-sheet" id="connectWallet">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="icon-cancel" data-bs-dismiss="modal" aria-hidden="true"></span>
-                </div>
-                <div class="modal-body text-center">
-                    <span class="logo icon-wallet"></span>
-                    <h3 class="mt-4">Connect Wallet</h3>
-                    <p class="mt-12 text-white text-large">Please connect by entering an existing wallet or create a new one.</p>
-                    <div class="mt-32">
-                        <a href="javascript:void(0);" class="tf-btn sm secondary d-inline-flex" data-bs-toggle="modal" data-bs-target="#keyWallet">Create wallet</a>
-                        <a href="javascript:void(0);" class="mt-12 tf-btn sm dark d-inline-flex" data-bs-toggle="modal" data-bs-target="#keyWallet">Enter a wallet</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    
-    <!-- key wallet -->
-    <div class="modal fade action-sheet" id="keyWallet">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span>Select input method</span>
-                    <span class="icon-cancel" data-bs-dismiss="modal" aria-hidden="true"></span>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li class="accent-box-v3 bg-surface tf-list-item-v3" data-bs-toggle="modal" data-bs-target="#inflation">
-                            <div class="content">
-                                <h5><a href="#">Keyless wallet</a></h5>
-                                <p class="mt-8 text-small text">Create an MPC wallet with your platform account.</p>
-                            </div>
-                            <span class="icon icon-mpc"></span>
-                        </li>
-                        <li class="mt-8 accent-box-v3 bg-surface tf-list-item-v3" data-bs-toggle="modal" data-bs-target="#inflation">
-                            <div class="content">
-                                <h5><a href="#">Seed phrase</a></h5>
-                                <p class="mt-8 text-small text">Create wallet using seed phrase</p>
-                            </div>
-                            <span class="icon icon-phrase"></span>
-                        </li>
-                        <li class="mt-8 accent-box-v3 bg-surface tf-list-item-v3" data-bs-toggle="modal" data-bs-target="#inflation">
-                            <div class="content">
-                                <h5><a href="#">Hardware wallet connection</a></h5>
-                                <p class="mt-8 text-small text">Connect hardware wallet via bluetooth</p>
-                            </div>
-                            <span class="icon icon-bluetooth"></span>
-                        </li>
-                        <li class="mt-8 accent-box-v3 bg-surface tf-list-item-v3" data-bs-toggle="modal" data-bs-target="#inflation">
-                            <div class="content">
-                                <h5><a href="#">Private key</a></h5>
-                                <p class="mt-8 text-small text">Paste or enter private key</p>
-                            </div>
-                            <span class="icon-key"></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-
-    <!-- custom -->
-    <div class="modal fade action-sheet" id="inflation">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span>inflation</span>
-                    <span class="icon-cancel" data-bs-dismiss="modal" aria-hidden="true"></span>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <li class="accent-box-v3 bg-surface">
-                            <h5><a href="#">Automatic (1%)</a></h5>
-                            <p class="mt-8 text-small text">automatically set slippage for successful trading. The value set automatically changes in real time depending on the price.</p>
-                        </li>
-                        <li class="mt-8 accent-box-v3 bg-surface">
-                            <h5><a href="#">Custom (Single String)</a></h5>
-                            <p class="mt-8 text-small text">slippage rate affects the chances of a successful trade and the final price</p>
-                        </li>
-                    </ul>
-                    <a href="#" class="mt-32 tf-btn sm secondary">Confirm</a>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-
     <!--chart detail  -->
     <div class="modal fade action-sheet" id="detailChart">
         <div class="modal-dialog" role="document">
@@ -420,6 +328,33 @@
                 </ul>
                 <a href="javascript:void(0);" class="item-check text-center text-button fw-6" data-bs-dismiss="modal">Cancel</a>
             </div>    
+        </div>
+    </div>
+
+     <!-- filter success -->
+     <div class="modal fade modalCenter" id="success">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content success_box">
+                <div class="icon-1 ani3">
+                    <span class="circle-box lg bg-circle check-icon bg-primary"></span>
+                </div>
+                <div class="icon-2 ani5">
+                    <span class="circle-box md bg-primary"></span>
+                </div>
+                <div class="icon-3 ani8">
+                    <span class="circle-box md bg-primary"></span>
+                </div>
+                <div class="icon-4 ani2">
+                    <span class="circle-box sm bg-primary"></span>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-surface">Successful!</h2>
+                    <h1 class="mt-8 text-primary">$ 1200.0</h1>
+                    <p class="mt-16 text-surface text-button">Notification</p>
+                </div>
+                
+                <a href="home.html" class="tf-btn lg primary mt-40">Done</a>
+            </div>
         </div>
     </div>
 
