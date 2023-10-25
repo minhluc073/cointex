@@ -239,11 +239,6 @@
   /* setTimeIn
   ------------------------------------------------------------------------------------- */
   var showNoti = function () {
-    if ($("#notiAccount").length > 0) {
-      setTimeout(function () {
-        $("#notiAccount").modal("show");
-      }, 2000);
-    }
     if ($("#modalNoti").length > 0) {
       let showPopup = sessionStorage.getItem("showPopup");
       if (!JSON.parse(showPopup)) {
